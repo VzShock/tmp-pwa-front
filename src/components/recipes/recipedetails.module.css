@@ -1,0 +1,147 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: white; /* Semi-transparent background for the overlay */
+  display: flex;
+  padding: 1rem; /* Padding around the modal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.modalContainer {
+  background-color: white;
+  /* border-radius: 15px; */
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh; /* This limits the height of the modal */
+  /* margin: auto; */
+  border-radius: 15px;
+  position: relative; /* Needed for sticky positioning to work */
+}
+
+.modalContainer::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.modalContent {
+  padding: 20px; /* Adjust this as necessary */
+  overflow-y: scroll; /* Makes content scrollable */
+  flex-grow: 1; /* Makes this div grow to fill space */
+  /* ... your other styles ... */
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+  font-family: Arial, sans-serif;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modalBody {
+  text-align: center;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modalUser {
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.125rem; /* 18px */
+  /* line-height: 1.75rem; 28px */
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.diamond {
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin: 5px;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.diamond_only {
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin: 5px;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* This class will be added by React's onMouseEnter event */
+.diamondHovered {
+  background-color: green;
+}
+
+/* This class will be toggled by React's onClick event */
+.diamondSelected {
+  background-color: green;
+}
+
+.diamond_white {
+  background-color: #ccc;
+}
+
+.modalDescription {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.modalTabs {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 10px 0;
+}
+
+.tabButton {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.tabButton:hover {
+  background-color: #54c458;
+  color: white;
+}
+
+.activeTab {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Add other styles as needed to match your design */

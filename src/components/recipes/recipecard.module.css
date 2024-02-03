@@ -1,0 +1,29 @@
+.primaryRating {
+  background-color: var(--primary);
+}
+
+.defaultRating {
+  background-color: var(--color-white);
+}
+
+.recipecard {
+  transition: all 0.2s ease-in-out;
+}
+
+.recipecard:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.01);
+}
+
+.diamond {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  transform: rotate(45deg);
+  margin: 5px;
+}
+
+.diamond_white {
+  background-color: var(--color-white);
+  border: 1px solid var(--primary);
+}

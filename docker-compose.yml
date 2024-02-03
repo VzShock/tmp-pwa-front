@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "M-WEB-902_PWA_frontend"
+    ports:
+      - 3000:3000
+  
