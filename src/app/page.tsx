@@ -82,7 +82,14 @@ export default function Home() {
   return (
     <div className="pt-24">
       <div className="container p-4">
-        <SimpleFloatingNav />
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            setSearchTerm("");
+          }}
+        >
+          <SimpleFloatingNav />
+        </div>
         <div
           style={{
             display: "flex",
@@ -129,11 +136,12 @@ export default function Home() {
         </div>
 
         {/* Display a message if there are no recipes */}
-        {recipes.length === 0 && (
-          <div className="flex italic text-neutral-500 items-center justify-center">
-            <p>No recipes yet.</p>
-          </div>
-        )}
+        {recipes.length === 0 ||
+          (filteredRecipes.length === 0 && (
+            <div className="ml-80 mr-80 h-16  bg-white flex italic text-neutral-500 items-center justify-center">
+              <p>No recipes yet.</p>
+            </div>
+          ))}
 
         <div className="">{recipeCards}</div>
         <AnimatePresence>
