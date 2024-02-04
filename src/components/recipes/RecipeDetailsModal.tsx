@@ -6,27 +6,21 @@ import { render } from "react-dom";
 import axios from "axios";
 
 interface RecipeDetailsModalProps {
-  id: string;
   title: string;
   description: string;
   ingredients: string[];
   steps: string[];
   image: string;
-  userId: string;
-  createdAt: string;
   onClose: () => void;
   rating: number;
 }
 
 const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
-  id,
   title,
   description,
   ingredients,
   steps,
   image,
-  userId,
-  createdAt,
   onClose,
   rating,
 }) => {
