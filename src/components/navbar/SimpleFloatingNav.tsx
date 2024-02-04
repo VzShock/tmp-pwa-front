@@ -12,15 +12,15 @@ export const SimpleFloatingNav = () => {
   return (
     <div>
       <nav
-        className={`${styles.navbar_container} z-30 fixed left-[50%] top-8 flex justify-between  -translate-x-[50%] items-center gap-6 rounded-lg p-2 text-sm text-neutral-500`}
+        className={`${styles.navbar_container} z-30 fixed left-[50%] top-8 flex  -translate-x-[50%] items-center  rounded-lg p-1 text-sm text-neutral-500`}
       >
         <Logo />
 
         <div className="flex items-center gap-6">
-          <NavLink href="/">Home</NavLink>
+          {/* <NavLink href="/">Home</NavLink>
           <NavLink href="/account">Account</NavLink>
-          <MySaved isOpen={isOpen} setIsOpen={setIsOpen} />
-          <NavLink href="/login">Disconnect</NavLink>
+          <MySaved isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+          {/* <NavLink href="/login">Disconnect</NavLink> */}
         </div>
       </nav>
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -31,7 +31,7 @@ export const SimpleFloatingNav = () => {
 const Logo = () => {
   return (
     <div className="flex flex-row items-center">
-      <div className="ml-2 text-white text-xl">myFood.</div>
+      <div className="ml-2 text-white text-xl">This is our Food.</div>
 
       <svg
         width="40"
@@ -73,7 +73,7 @@ const SpringModal = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-50 flex justify-center items-start p-8 bg-slate-900/20 backdrop-blur-md overflow-y-auto"
+          className="fixed inset-0 z-50 flex justify-center items-start p bg-slate-900/20 backdrop-blur-md overflow-y-auto"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}

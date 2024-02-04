@@ -11,29 +11,11 @@ interface RecipeDetailsModalProps {
   description: string;
   ingredients: string[];
   steps: string[];
-  pictures: string[];
+  image: string;
   userId: string;
   createdAt: string;
   onClose: () => void;
-}
-
-interface RecipeDetails {
-  id: string;
-  userId: string;
-  title: string;
-  description: string;
-  createdAt: string;
-  pictures: string[];
-  ingredients: string[];
-  steps: string[];
-  evaluations: [
-    {
-      id: string;
-      rating: number;
-      comment: string;
-      userId: string;
-    }
-  ];
+  rating: number;
 }
 
 const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
@@ -42,21 +24,19 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   description,
   ingredients,
   steps,
-  pictures,
+  image,
   userId,
   createdAt,
   onClose,
+  rating,
 }) => {
   const [activeTab, setActiveTab] = useState("preview");
   const [hoverRating, setHoverRating] = useState(0);
   const [selectedRating, setSelectedRating] = useState(0);
-  const tabOrder = ["ingredients", "preview", "reviews"];
+  const tabOrder = ["ingredients", "preview"];
   const [direction, setDirection] = useState(0);
   const [lastTab, setLastTab] = useState("");
   const [username, setUsername] = useState("");
-  const [recipeDetails, setRecipeDetails] = useState<RecipeDetails | null>(
-    null
-  );
   const [ingredientsList, setIngredientsList] = useState<string[]>([]);
   const [stepsList, setStepsList] = useState<string[]>([]);
 
@@ -76,60 +56,8 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   };
 
   useEffect(() => {
-    if (username === "" || recipeDetails === null) {
-      getUser();
-      getRecipeDetails();
-    }
     setDirection(tabOrder.indexOf(activeTab));
   }, [activeTab, tabOrder]);
-
-  const getUser = async () => {
-    const accessToken = localStorage.getItem("access_token");
-
-    if (!accessToken) {
-      console.log("Access token or created posts not found.");
-      return;
-    }
-
-    try {
-      const response = await axios.get(
-        `http://victoire-rabeau.com:3000/users/${userId}`,
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-
-      setUsername(response.data.username);
-    } catch (error) {
-      console.error("Error fetching recipe details:", error);
-    }
-  };
-
-  const getRecipeDetails = async () => {
-    const accessToken = localStorage.getItem("access_token");
-
-    if (!accessToken) {
-      console.log("Access token not found.");
-      return;
-    }
-
-    try {
-      const response = await axios.get(
-        `http://victoire-rabeau.com:3000/posts/${id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-
-      setRecipeDetails(response.data);
-    } catch (error) {
-      console.error("Error fetching recipe details:", error);
-    }
-  };
 
   const TabContent = ({ activeTab }: { activeTab: string }) => {
     switch (activeTab) {
@@ -137,8 +65,6 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
         return getIngredients();
       case "preview":
         return getPreview();
-      case "reviews":
-        return getReviews();
       default:
         return null;
     }
@@ -150,15 +76,7 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
       nextTab === "ingredients"
     ) {
       return 1;
-    } else if (currentTab === "reviews" && nextTab === "preview") {
-      return 1;
-    } else if (currentTab === "reviews" && nextTab === "ingredients") {
-      return 1;
     } else if (currentTab === "ingredients" && nextTab === "preview") {
-      return -1;
-    } else if (currentTab === "preview" && nextTab === "reviews") {
-      return -1;
-    } else if (currentTab === "ingredients" && nextTab === "reviews") {
       return -1;
     } else {
       return 0;
@@ -177,8 +95,8 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
     setSelectedRating(rating);
   };
 
-  const renderRating = (rating: number) => {
-    return [...Array(5)].map((_, i) => (
+  const renderRating = () => {
+    return [...Array(10)].map((_, i) => (
       <div
         style={{ cursor: "default" }}
         key={i}
@@ -189,20 +107,16 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
     ));
   };
 
-  const renderEditRating = () => {
-    return [...Array(5)].map((_, i) => (
-      <div
-        key={i}
-        className={`${styles.diamond} ${
-          (hoverRating > 0 && i < hoverRating) || i < selectedRating
-            ? styles.diamondSelected
-            : ""
-        }`}
-        onMouseEnter={() => handleMouseEnter(i + 1)}
-        onMouseLeave={handleMouseLeave}
-        onClick={() => handleClick(i + 1)}
-      ></div>
-    ));
+  const renderRating2 = () => {
+    return (
+      <>
+        <div>{rating} / 10</div>
+        <div
+          style={{ cursor: "default" }}
+          className={`${styles.diamond_only} `}
+        ></div>
+      </>
+    );
   };
 
   const getTabsButtons = (tab: string) => {
@@ -224,14 +138,6 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
         >
           Preview
         </button>
-        <button
-          onClick={() => setActiveTab("reviews")}
-          className={`${styles.tabButton} ${
-            tab === "reviews" ? styles.activeTab : ""
-          }`}
-        >
-          Reviews
-        </button>
       </div>
     );
   };
@@ -239,21 +145,19 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   const getPreview = () => {
     return (
       <div>
-        <h5>Preview</h5>
-
-        <img
-          src={pictures[0] || "/assets/placeholder.png"}
-          alt={title}
-          className={`${styles.modalImage}`}
-        />
+        <div className="flex-none w-full relative">
+          <img
+            src={image ? image : "/assets/placeholder.png"}
+            alt={title}
+            className=" inset-0 w-full h-60	 object-cover rounded"
+          />
+        </div>
         <div className="flex flex-row items-center justify-between mb-6">
-          <h5>{title}</h5>
-          <div className={`${styles.ratingContainer}`}>
-            {renderEditRating()}
-          </div>
+          <h5 className="font-semibold">{title}</h5>
+          <div className={`${styles.ratingContainer}`}>{renderRating2()}</div>
         </div>
         <p className={`${styles.modalDescription}`}>{description}</p>
-        {recipeDetails && <RecipeSteps steps={recipeDetails.steps || []} />}
+        <RecipeSteps steps={steps || []} />
       </div>
     );
   };
@@ -261,37 +165,14 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   const getIngredients = () => {
     return (
       <div>
-        <h5>Ingredients</h5>
+        <h5 className="mb-6">Ingredients</h5>
         {/* print the list of ingredients with tailwind */}
-        <ul className="max-w-md space-y-1 list-disc list-inside text-left">
-          {recipeDetails &&
-            recipeDetails.ingredients.map((ingredient, index) => (
+        <ul className="mx-12 max-w-md space-y-1 list-disc list-inside text-left">
+          {ingredients &&
+            ingredients.map((ingredient, index) => (
               <li key={index}>{ingredient}</li>
             ))}
         </ul>
-      </div>
-    );
-  };
-
-  const getReviews = () => {
-    // create a list of 5 ratings with a username
-    const ratings = [
-      { username: "username1", rating: 5 },
-      { username: "username2", rating: 4 },
-      { username: "username45", rating: 3 },
-      { username: "username43", rating: 1 },
-      { username: "username5", rating: 3 },
-    ];
-
-    return (
-      <div>
-        <h5>Reviews</h5>
-        {ratings.map((rating, index) => (
-          <div className="flex justify-between my-4">
-            {rating.username}
-            <div className="flex">{renderRating(rating.rating)}</div>
-          </div>
-        ))}
       </div>
     );
   };
@@ -300,10 +181,7 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
     <div className={styles.modalOverlay}>
       <div className={styles.modalContainer}>
         <div className={styles.modalHeader}>
-          <div className={`${styles.modalUser} flex flex-row`}>
-            <p>By &nbsp;</p>
-            <div className="font-semibold">{username || userId}</div>
-          </div>
+          <div className={`${styles.modalUser} flex flex-row`}></div>
 
           <button
             onClick={onClose}

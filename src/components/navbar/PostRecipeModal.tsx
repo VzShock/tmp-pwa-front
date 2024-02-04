@@ -7,7 +7,6 @@ import React, {
 } from "react";
 import axios from "axios";
 import styles from "./navbar.module.css";
-import addNotification from "react-push-notification";
 
 interface RecipeStep {
   instruction: string;
@@ -110,58 +109,8 @@ const PostRecipeModal = ({
       reader.onerror = (error) => reject(error);
     });
 
-  const handleNotification = () => {
-    // Notification function remains the same
-    addNotification({
-      title: "Recipe posted",
-      message: "You can view it in your profile",
-      duration: 4000,
-      native: true,
-      onClick: () => {
-        window.location.href = "/";
-      },
-    });
-  };
-
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    const accessToken = localStorage.getItem("access_token");
-    if (!accessToken) {
-      alert("You must be logged in to post a recipe");
-      return;
-    }
-
-    const body = {
-      title,
-      description,
-      ingredients: ingredients.map((ingredient) => ingredient.name),
-      steps: steps.map((step) => step.instruction),
-      pictures: imageBase64 ? [imageBase64] : [], // Send base64 image in an array
-    };
-
-    try {
-      const response = await axios.post(
-        "http://victoire-rabeau.com:3000/posts",
-        body,
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      handleNotification();
-      updateCreatedPosts(response.data.id); // Update local storage logic
-      setIsOpen(false); // Close the modal
-      clearFields(); // Clear form fields after successful submission
-    } catch (error) {
-      console.error(error);
-      alert(
-        "Failed to post recipe. Error: " +
-          (error.response?.data?.message || error.message)
-      );
-    }
   };
 
   const updateCreatedPosts = (newPostId: string) => {

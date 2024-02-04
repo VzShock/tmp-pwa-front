@@ -17,7 +17,7 @@ const RecipeSteps: React.FC<RecipeStepsProps> = ({ steps }) => {
   return (
     <div className="px-4 py-2">
       <div className="mx-auto max-w-3xl">
-        <h3 className="mb-4 text-center text-3xl font-semibold">
+        <h3 className="mb-4 text-center text-xl font-semibold">
           Scroll to see the steps
         </h3>
         {steps.map((step, index) => (

@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 import RecipeDetailsModal from "@/components/recipes/RecipeDetailsModal";
 import { SimpleFloatingNav } from "@/components/navbar/SimpleFloatingNav";
 import axios from "axios";
-import { IoIosRefreshCircle } from "react-icons/io";
 
 // Define a type for the recipe
 type Recipe = {
@@ -18,9 +17,9 @@ type Recipe = {
   description: string;
   ingredients: string[];
   steps: string[];
-  pictures: string[];
-  userId: string;
+  image: string;
   createdAt: string;
+  rating: number;
 };
 
 export default function Home() {
@@ -31,16 +30,37 @@ export default function Home() {
   //router hook
   const router = useRouter();
 
-  useEffect(() => {
-    // Check for the presence of an access token in localStorage
-    const accessToken = localStorage.getItem("access_token");
-    if (!accessToken) {
-      // Redirect to the Login page if there is no access token
-      router.push("/login");
-    }
+  // const generateRandomRecipes = (): Recipe[] => {
+  //   return Array.from({ length: 5 }).map((_, index) => ({
+  //     id: String(index),
+  //     title: `Random Recipe ${index + 1}`,
+  //     description: "A delicious random recipe.",
+  //     ingredients: ["Ingredient 1", "Ingredient 2"],
+  //     steps: ["Step 1", "Step 2"],
+  //     pictures: [
+  //       "https://www.bienmanger.com/tinyMceData/images/contents/851/content_lg.jpg",
+  //     ],
+  //     createdAt: new Date().toISOString(),
+  //   }));
+  // };
 
-    // Fetch the user's recipes
-    getMyRecipes();
+  useEffect(() => {
+    // Fetch recipes from the local JSON file
+    const fetchRecipes = async () => {
+      const response = await fetch("/assets/recipes.json");
+      const data = await response.json();
+
+      console.log(data);
+
+      setRecipes(
+        data.map((recipe: any, index: number) => ({
+          ...recipe,
+          id: String(index), // Assuming your JSON doesn't include an 'id' field
+        }))
+      );
+    };
+
+    fetchRecipes();
   }, []);
 
   const openModalWithRecipe = (recipe: Recipe) => {
@@ -64,41 +84,6 @@ export default function Home() {
         </div>
       </div>
     ));
-
-  const getMyRecipes = async () => {
-    const accessToken = localStorage.getItem("access_token");
-
-    if (!accessToken) {
-      return;
-    }
-
-    try {
-      const response = await axios.get(
-        "http://victoire-rabeau.com:3000/posts",
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-
-      const data = response.data.data;
-
-      // setRecipes using the array in response.data so it's a map of recipes
-      setRecipes(data);
-
-      // setRecipes(response.data); // Update the recipes state with fetched data
-      // sort the recipes by date created in descending order
-      setRecipes((recipes) =>
-        recipes.sort(
-          (a, b) =>
-            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-        )
-      );
-    } catch (error) {
-      console.error("Error fetching recipe details:", error);
-    }
-  };
 
   return (
     <div className="pt-24">
@@ -124,17 +109,7 @@ export default function Home() {
             style={{
               display: "inline-block", // Ensure the motion div wraps tightly around the icon
             }}
-          >
-            <IoIosRefreshCircle
-              onClick={getMyRecipes}
-              style={{
-                color: "#63a375",
-                width: "40px",
-                height: "40px",
-                cursor: "pointer",
-              }}
-            />
-          </motion.div>
+          ></motion.div>
         </div>
 
         {/* Display a message if there are no recipes */}
