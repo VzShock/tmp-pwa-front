@@ -211,5 +211,37 @@
       "Serve hot with rice or noodles. To make better: Add lime"
     ],
     "image": "/assets/recipesImages/red_thai_curry.jpg"
+  },
+  {
+    "title": "Kimbap",
+    "description": "This is a versatile sushi, which is super fun to make!",
+    "rating": 10,
+    "ingredients": [
+      "beef bulgogi",
+      "Crabmeat",
+      "Carrots",
+      "Pickled radish",
+      "Avocado",
+      "Egg",
+      "Cucumber",
+      "Spinach",
+      "Spam",
+      "Tuna",
+      "Salmon",
+      "Red bell pepper",
+      "Sausage",
+      "Ham",
+      "seaweed",
+      "Rice"
+    ],
+    "steps": [
+      "sautée, salt and cook/julienne the carrots + spinach, egg, cucumber, bell pepper",
+      "Cut everything to strips",
+      "Cook the rice and add rice vinegar, sesame oil and sesame seeds",
+      "Cool the rice in the fridge",
+      "Now assemble everything , rice, seaweed and your other ingredients",
+      "Bon appetite!"
+    ],
+    "image": "/assets/recipesImages/kimbap.jpg"
   }
 ]

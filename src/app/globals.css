@@ -42,7 +42,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
     169deg,
     rgba(231, 116, 149, 1) 1%,
     rgba(74, 191, 107, 1) 2%,
@@ -50,7 +50,9 @@ body {
     rgba(255, 255, 255, 1) 95%,
     rgba(231, 116, 149, 1) 98%,
     rgba(74, 191, 107, 1) 99%
-  );
+  ); */
+  background-image: url(/assets/backgroundimage.png);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

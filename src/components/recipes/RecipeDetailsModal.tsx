@@ -39,6 +39,12 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   const [username, setUsername] = useState("");
   const [ingredientsList, setIngredientsList] = useState<string[]>([]);
   const [stepsList, setStepsList] = useState<string[]>([]);
+  const [ingredientStates, setIngredientStates] = useState(
+    ingredients.map((ingredient) => ({
+      name: ingredient,
+      checked: false,
+    }))
+  );
 
   const tabVariants = {
     hidden: {
@@ -54,6 +60,15 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
       x: direction === 1 ? 100 : -100,
     },
   };
+
+  useEffect(() => {
+    setIngredientStates(
+      ingredients.map((ingredient) => ({
+        name: ingredient,
+        checked: false,
+      }))
+    );
+  }, [ingredients]);
 
   useEffect(() => {
     setDirection(tabOrder.indexOf(activeTab));
@@ -162,20 +177,44 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
     );
   };
 
-  const getIngredients = () => {
-    return (
-      <div>
-        <h5 className="mb-6">Ingredients</h5>
-        {/* print the list of ingredients with tailwind */}
-        <ul className="mx-12 max-w-md space-y-1 list-disc list-inside text-left">
-          {ingredients &&
-            ingredients.map((ingredient, index) => (
-              <li key={index}>{ingredient}</li>
-            ))}
-        </ul>
-      </div>
+  const handleIngredientCheck = (index: number) => {
+    const newIngredientStates = [...ingredientStates];
+    newIngredientStates[index].checked = !newIngredientStates[index].checked;
+    setIngredientStates(
+      // sort ingredients from not checked to checked
+      newIngredientStates.sort((a, b) =>
+        a.checked === b.checked ? 0 : a.checked ? 1 : -1
+      )
     );
   };
+
+  const getIngredients = () => (
+    <div>
+      <h5 className="mb-6">Ingredients</h5>
+      <ul className=" space-y-2">
+        {ingredientStates.map((ingredient, index) => (
+          <li key={index} className="flex items-center">
+            <input
+              id={`ingredient-checkbox-${index}`}
+              type="checkbox"
+              checked={ingredient.checked}
+              onChange={() => handleIngredientCheck(index)}
+              className="w-10 h-10" // Larger checkbox
+            />
+            <label
+              htmlFor={`ingredient-checkbox-${index}`}
+              className="ml-2 text-xl"
+              style={{ userSelect: "none" }}
+            >
+              {" "}
+              {/* Larger text */}
+              {ingredient.name}
+            </label>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
   return (
     <div className={styles.modalOverlay}>

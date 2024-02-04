@@ -3,12 +3,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import RecipeCard from "@/components/recipes/RecipeCard";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 
 //components
 import RecipeDetailsModal from "@/components/recipes/RecipeDetailsModal";
 import { SimpleFloatingNav } from "@/components/navbar/SimpleFloatingNav";
-import axios from "axios";
 
 // Define a type for the recipe
 type Recipe = {
@@ -26,9 +24,7 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
-
-  //router hook
-  const router = useRouter();
+  const [searchTerm, setSearchTerm] = useState("");
 
   // const generateRandomRecipes = (): Recipe[] => {
   //   return Array.from({ length: 5 }).map((_, index) => ({
@@ -68,22 +64,20 @@ export default function Home() {
     setIsModalOpen(true);
   };
 
-  const recipeCards =
-    Array.isArray(recipes) &&
-    recipes.map((recipe, index) => (
-      <div key={recipe.id} className="flex justify-center pb-4">
-        {" "}
-        {/* Use recipe.id instead of index */}
-        <div
-          key={recipe.id + "-card"}
-          onClick={() => openModalWithRecipe(recipe)}
-          className="cursor-pointer"
-        >
-          <RecipeCard {...recipe} />{" "}
-          {/* Ensure RecipeCard can handle this structure */}
-        </div>
+  const filteredRecipes = recipes.filter((recipe) =>
+    recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const recipeCards = filteredRecipes.map((recipe) => (
+    <div key={recipe.id} className="flex justify-center pb-4">
+      <div
+        onClick={() => openModalWithRecipe(recipe)}
+        className="cursor-pointer"
+      >
+        <RecipeCard {...recipe} />
       </div>
-    ));
+    </div>
+  ));
 
   return (
     <div className="pt-24">
@@ -110,6 +104,28 @@ export default function Home() {
               display: "inline-block", // Ensure the motion div wraps tightly around the icon
             }}
           ></motion.div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: "20px",
+            width: "100%", // Ensure the container takes full width
+          }}
+        >
+          <input
+            className="w-2/4 sm:w-100 form-control"
+            type="text"
+            placeholder="Search for a recipe..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{
+              // width: "50%", // Adjust this value as needed
+              margin: "0 auto", // Center the input within the div
+            }}
+          />
         </div>
 
         {/* Display a message if there are no recipes */}
