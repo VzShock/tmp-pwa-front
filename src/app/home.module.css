@@ -1,0 +1,4 @@
+/* CSS file */
+.blurred {
+  filter: blur(5px);
+}

@@ -243,5 +243,34 @@
       "Bon appetite!"
     ],
     "image": "/assets/recipesImages/kimbap.jpg"
+  },
+  {
+    "title": "Ultimate Thai Beef Salad",
+    "rating": 9,
+    "description": "Tgau beef salad is a refreshing and zesty salad that is perfect for a light meal. It is a great way to use up leftover steak.",
+    "prepTime": "15 minutes",
+    "cookTime": "20 minutes",
+    "serves": 4,
+    "ingredients": [
+      "1 tbsp vegetable oil",
+      "2 x 200g beef rib eye steaks",
+      "1 small onion",
+      "1 cucumber",
+      "2 small tomatoes",
+      "1 large red chilli",
+      "½ cup mint leaves",
+      "¼ cup spring onion",
+      "Optional steamed rice",
+      "marinade: 1tbsp fish sauce, 1tsp palm sugar or brown sugar, 0.5 tsp black pepper",
+      "dressing: 3tbsp fish sauce, 2tbsp palm sugar or brown sugar, 2tbsp lime juice"
+    ],
+    "steps": [
+      "Marinate the steaks with marinade ingredients for 10 minutes.",
+      "Whisk together the dressing ingredients.",
+      "Cook steaks in heated oil to your preference, let rest, then slice.",
+      "Combine salad ingredients with steak and dressing in a bowl.",
+      "Serve with optional rice."
+    ],
+    "image": "/assets/recipesImages/thai_beef_salad.jpeg"
   }
 ]

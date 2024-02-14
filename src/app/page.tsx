@@ -49,7 +49,7 @@ export default function Home() {
       console.log(data);
 
       setRecipes(
-        data.map((recipe: any, index: number) => ({
+        data.reverse().map((recipe: any, index: number) => ({
           ...recipe,
           id: String(index), // Assuming your JSON doesn't include an 'id' field
         }))
