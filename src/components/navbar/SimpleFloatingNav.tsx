@@ -6,7 +6,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import PostRecipeModal from "./PostRecipeModal";
 
-export const SimpleFloatingNav = () => {
+interface NavLinkProps {
+  searchTerm: string;
+  setSearchTerm: Dispatch<SetStateAction<string>>;
+}
+
+export const SimpleFloatingNav = ({
+  searchTerm,
+  setSearchTerm,
+}: NavLinkProps) => {
+  // const [searchTerm, setSearchTerm] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,9 +23,29 @@ export const SimpleFloatingNav = () => {
       <nav
         className={`${styles.navbar_container} z-30 fixed left-[50%] top-8 flex  -translate-x-[50%] items-center  rounded-lg p-1 text-sm text-neutral-500`}
       >
-        <Logo />
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            setSearchTerm("");
+          }}
+        >
+          <Logo />
+        </div>
 
         <div className="flex items-center gap-6">
+          {/* add an input for searching */}
+          <input
+            className="w-2/4 sm:w-100 form-control"
+            type="text"
+            placeholder="Search ..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{
+              width: "100%", // Adjust this value as needed
+              margin: "0 auto", // Center the input
+            }}
+          ></input>
+
           {/* <NavLink href="/">Home</NavLink>
           <NavLink href="/account">Account</NavLink>
           <MySaved isOpen={isOpen} setIsOpen={setIsOpen} /> */}
@@ -52,11 +81,6 @@ const Logo = () => {
     </div>
   );
 };
-
-interface NavLinkProps {
-  children: string;
-  href: string;
-}
 
 const SpringModal = ({
   isOpen,

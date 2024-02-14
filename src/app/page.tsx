@@ -82,14 +82,10 @@ export default function Home() {
   return (
     <div className="pt-24">
       <div className="container p-4">
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => {
-            setSearchTerm("");
-          }}
-        >
-          <SimpleFloatingNav />
-        </div>
+        <SimpleFloatingNav
+          setSearchTerm={setSearchTerm}
+          searchTerm={searchTerm}
+        />
         <div
           style={{
             display: "flex",
@@ -113,7 +109,7 @@ export default function Home() {
           ></motion.div>
         </div>
 
-        <div
+        {/* <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -133,7 +129,7 @@ export default function Home() {
               margin: "0 auto", // Center the input within the div
             }}
           />
-        </div>
+        </div> */}
 
         {/* Display a message if there are no recipes */}
         {recipes.length === 0 ||

@@ -77,7 +77,7 @@
   {
     "title": "Beef Bourguignon",
     "description": "This boeuf bourguignon is a prestigious speciality which will make your tastebuds melt. Feel like a queen!",
-    "rating": "Not provided",
+    "rating": 8,
     "serving": 4,
     "ingredients": [
       "1kg beef",
@@ -272,5 +272,31 @@
       "Serve with optional rice."
     ],
     "image": "/assets/recipesImages/thai_beef_salad.jpeg"
+  },
+  {
+    "title": "Kimchi Fried Rice (Kimchi-bokkeumbap)",
+    "description": "This simple, simple dish is super, super tasty. It’s just a few ingredients, but it’s a dish much loved by Koreans and a staple of our everyday lives. This version is simple, but you can dress it up with a bit of beef, chicken, pork, ham, or even spam. Many Koreans also like to put a fried egg on top, but my family prefers this simple version that I’m showing you here.",
+    "rating": 8,
+    "serving": 2,
+    "ingredients": [
+      "3 bowls steamed rice (3 cups)",
+      "1 cup chopped kimchi (should be well-fermented and sour)",
+      "¼ cup kimchi juice",
+      "¼ cup water",
+      "2-3 tablespoons gochujang",
+      "3 teaspoons toasted sesame oil",
+      "1 teaspoon vegetable oil",
+      "1 green onion, chopped",
+      "1 tablespoon roasted sesame seeds",
+      "1 sheet of gim, roasted and shredded into seaweed strips"
+    ],
+    "steps": [
+      "Heat up a wide, flat pan or skillet. Add the vegetable oil.",
+      "Add the kimchi and stir fry for 1 minute over medium-high heat.",
+      "Add rice, kimchi juice, water, and gochujang. Stir all the ingredients together for about 7 minutes with a wooden spoon.",
+      "Add sesame oil and remove from the heat.",
+      "Garnish with sprinkled chopped green onion, roasted gim, and sesame seeds. Serve right away."
+    ],
+    "image": "/assets/recipesImages/kimchi_fried_rice.jpg"
   }
 ]
