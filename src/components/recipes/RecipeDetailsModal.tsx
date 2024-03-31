@@ -40,11 +40,15 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   const [ingredientsList, setIngredientsList] = useState<string[]>([]);
   const [stepsList, setStepsList] = useState<string[]>([]);
   const [ingredientStates, setIngredientStates] = useState<IngredientState[]>(
-    ingredients.map((ingredient) => {
-      // Check if the ingredient is an array and handle accordingly
-      if (Array.isArray(ingredient)) {
+    ingredients.map((ingredient): IngredientState => {
+      // Assuming `ingredient` can be a complex object based on your mapping logic
+      if (
+        typeof ingredient === "object" &&
+        "title" in ingredient &&
+        Array.isArray(ingredient.items)
+      ) {
         return {
-          name: { title: ingredient[0], items: ingredient.slice(1) },
+          name: { title: ingredient.title, items: ingredient.items },
           checked: false,
         };
       } else {
