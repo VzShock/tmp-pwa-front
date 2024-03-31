@@ -9,11 +9,15 @@ import PostRecipeModal from "./PostRecipeModal";
 interface NavLinkProps {
   searchTerm: string;
   setSearchTerm: Dispatch<SetStateAction<string>>;
+  language: string;
+  setLanguage: Dispatch<SetStateAction<string>>;
 }
 
 export const SimpleFloatingNav = ({
   searchTerm,
   setSearchTerm,
+  language,
+  setLanguage,
 }: NavLinkProps) => {
   // const [searchTerm, setSearchTerm] = useState("");
   const [isOpen, setIsOpen] = useState(false);
@@ -50,6 +54,22 @@ export const SimpleFloatingNav = ({
           <NavLink href="/account">Account</NavLink>
           <MySaved isOpen={isOpen} setIsOpen={setIsOpen} /> */}
           {/* <NavLink href="/login">Disconnect</NavLink> */}
+        </div>
+
+        <div className="flex items-center gap-6 ml-6">
+          <button
+            onClick={() =>
+              setLanguage((language) => (language === "en" ? "fr" : "en"))
+            }
+            // add style on hover scale 2
+            className="hover:scale-105 transition-transform"
+          >
+            <img
+              src={language === "en" ? "/assets/fr.png" : "/assets/en.png"}
+              alt={language}
+              className="w-12 h-12"
+            />
+          </button>
         </div>
       </nav>
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />

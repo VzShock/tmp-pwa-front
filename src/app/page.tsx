@@ -25,6 +25,7 @@ export default function Home() {
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [language, setLanguage] = useState("fr");
 
   // const generateRandomRecipes = (): Recipe[] => {
   //   return Array.from({ length: 5 }).map((_, index) => ({
@@ -41,23 +42,19 @@ export default function Home() {
   // };
 
   useEffect(() => {
-    // Fetch recipes from the local JSON file
     const fetchRecipes = async () => {
-      const response = await fetch("/assets/recipes.json");
+      const filePath = `/assets/recipes_${language}.json`;
+      const response = await fetch(filePath);
       const data = await response.json();
-
-      console.log(data);
-
       setRecipes(
-        data.reverse().map((recipe: any, index: number) => ({
+        data.map((recipe: any, index: number) => ({
           ...recipe,
-          id: String(index), // Assuming your JSON doesn't include an 'id' field
+          id: String(index),
         }))
       );
     };
-
     fetchRecipes();
-  }, []);
+  }, [language]);
 
   const openModalWithRecipe = (recipe: Recipe) => {
     setSelectedRecipe(recipe);
@@ -85,6 +82,8 @@ export default function Home() {
         <SimpleFloatingNav
           setSearchTerm={setSearchTerm}
           searchTerm={searchTerm}
+          language={language}
+          setLanguage={setLanguage}
         />
         <div
           style={{

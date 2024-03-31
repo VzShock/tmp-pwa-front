@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Salade Asiatique",
+    "description": "Cette salade merveilleuse, croustillante et délicieuse éclairera vos sens.",
+    "rating": "9",
+    "serving": null,
+    "image": "/assets/recipesImages/asian_salad.jpg",
+    "ingredients": [
+      "sésame grillé",
+      "Carottes râpées",
+      "chou rouge",
+      "concombre",
+      "tomate",
+      "Peut ajouter : poulet rôti",
+      "Graines de sésame",
+      "Sauce de poisson",
+      "Vinaigre de riz",
+      "Sauce soja",
+      "Huile d'olive",
+      "Miel",
+      "Huile de sésame",
+      "Sel + poivre",
+      "Gingembre et ail"
+    ],
+    "steps": [
+      "Tout d'abord, ajoutez du sel au chou, aux concombres et aux carottes pendant plus de 20 min",
+      "Rincez le sel, puis pressez pour enlever l'eau",
+      "Ajoutez la sauce"
+    ]
+  },
+  {
+    "title": "Salade de concombre à la coréenne",
+    "description": "Salade de concombre épicée, croquante, fraîche et absolument magnifique, parfaite pour être servie avec du riz et du kimchi.",
+    "rating": "10",
+    "serving": null,
+    "image": "/assets/recipesImages/cucumber_salad.jpg",
+    "ingredients": [
+      "2 cuillères à soupe de sauce soja (Jin Ganjang)",
+      "1 cuillère à café de vinaigre de riz",
+      "1/2 cuillère à café de sucre",
+      "1/2 cuillère à soupe de poudre de piment rouge coréen",
+      "1 cuillère à soupe de graines de sésame",
+      "3 gousses d'Ail émincées",
+      "1 cuillère à café d'huile de sésame",
+      "1 concombre/ 9 mini concombres"
+    ],
+    "steps": [
+      "Coupez le concombre en tranches ou en spirale.",
+      "Salez les concombres et laissez reposer toute la nuit",
+      "Égouttez et pressez pour enlever l'excès d'eau.",
+      "Ajoutez la sauce, et bon appétit !"
+    ]
+  },
+  {
+    "title": "Poulet collant à la coréenne",
+    "description": "Ce poulet collant à la coréenne accompagnera très bien le riz et fera danser vos papilles !",
+    "rating": 8.5,
+    "serving": "Variable",
+    "ingredients": [
+      "450g de poitrine de poulet sans peau et désossée, coupée en gros morceaux",
+      "2 cuillères à soupe de gochugaru (flocons de piment rouge coréen)",
+      "1 cuillère à soupe d'huile végétale",
+      "2 cuillères à soupe de sauce soja",
+      "1 cuillère à soupe de vinaigre de riz",
+      "2 cuillères à soupe de miel",
+      "1 cuillère à soupe de graines de sésame",
+      "2 tiges d'oignons verts, hachées"
+    ],
+    "steps": [
+      "Faites frire votre poulet jusqu'à ce qu'il soit presque cuit.",
+      "Préparez la sauce.",
+      "Chauffez la sauce jusqu'à ce qu'elle bouillonne et ajoutez le poulet.",
+      "Garnissez de graines de sésame et d'oignons verts."
+    ],
+    "image": "/assets/recipesImages/korean_sticky_chicken.jpg"
+  },
+  {
+    "title": "Boeuf Bourguignon",
+    "description": "Ce boeuf bourguignon est une spécialité prestigieuse qui fera fondre vos papilles. Sentez-vous comme une reine !",
+    "rating": 8,
+    "serving": 4,
+    "ingredients": [
+      "1kg de bœuf",
+      "750 ml de vin rouge",
+      "Carottes",
+      "2 feuilles de laurier",
+      "Thym",
+      "3 cuillères à soupe d'huile, 3/4 cuillère à café de sel, 1/2 cuillère à café de poivre (pour faire dorer le bœuf)",
+      "Champignons",
+      "150g de bacon",
+      "3 cuillères à soupe de beurre",
+      "3 gousses d'ail",
+      "2 cuillères à soupe de pâte de tomate",
+      "750ml de bouillon de bœuf",
+      "1/4 cuillère à café de sel",
+      "2 cuillères à soupe de persil",
+      "2 cuillères à soupe de farine de maïs"
+    ],
+    "steps": [
+      "Marinez le bœuf pendant une nuit dans le vin rouge, les carottes et les épices.",
+      "Chauffez le bacon dans une poêle, retirez le bacon et conservez l'huile puis faites dorer le bœuf par lots. Ne le laissez pas cuire plus d'1 min de chaque côté, ne les laissez pas se toucher.",
+      "Retirez le bœuf, et retirez l'excès de graisse. Il restera une couche brune savoureuse au fond.",
+      "Ajoutez le beurre. Remettez vos carottes et quelques oignons. Grattez et mélangez. Jusqu'à ce qu'ils commencent à peine à dorer, puis ajoutez votre ail pour 1 min.",
+      "Ajoutez votre farine de maïs. Cuisez jusqu'à ce qu'elle ne goûte plus la farine. Ajoutez la pâte de tomate.",
+      "1/3 de la bouteille de vin dedans et mélangez, déglacez correctement. Après avoir déglacé, ajoutez tout le vin. Puis ajoutez le bacon et le bœuf.",
+      "Si le bœuf n'est pas entièrement submergé, alors ajoutez le bouillon pour couvrir. Ajoutez les feuilles de laurier et le thym. Laissez mijoter à feu très doux pendant 2-4 heures.",
+      "Préparez les champignons à mettre dessus. Et voilà !"
+    ],
+    "image": "/assets/recipesImages/boeuf_bourguignon.jpg"
+  },
+  {
+    "title": "Kimchi Jigae",
+    "description": "Ce Kimchi Jigae est puissant et réconfortant, épicé et plein de saveur ! Gardez cette recette pour un jour de pluie.",
+    "rating": 9,
+    "serving": 6,
+    "ingredients": [
+      "1 cuillère à soupe de gochugaru",
+      "1/2 cuillère à soupe de sauce soja",
+      "1/2 cuillère à soupe de sauce de poisson",
+      "1/2 cuillère à café de pâte de crevettes",
+      "1 cuillère à soupe de gochujang",
+      "1/2 cuillère à soupe d'ail émincé",
+      "1/2 cuillère à soupe de graisse de canard",
+      "450g d'épaule de porc ou de poitrine de porc",
+      "3 tiges d'oignon vert, coupées en diagonale, et laissez-en un peu pour garnir",
+      "1 oignon coupé finement",
+      "Jus de kimchi",
+      "Eau de riz",
+      "Tofu",
+      "2 tasses de kimchi",
+      "1 cuillère à café de sel",
+      "2 cuillères à café de sucre",
+      "1 cuillère à café d'huile de sésame"
+    ],
+    "steps": [
+      "Faites frire les oignons verts, les oignons, l'ail.",
+      "Faites frire le porc avec de l'huile de sésame.",
+      "Ajoutez le kimchi ensemble.",
+      "Remuez pendant 3-5 min.",
+      "Ajoutez de l'eau si c'est trop sec pour frire.",
+      "Ajoutez 2 tasses d'eau de riz, faites bouillir pendant 10 min.",
+      "Ajoutez le reste des ingrédients.",
+      "Ajoutez 4-5 cuillères à soupe de jus de kimchi.",
+      "Ajoutez 1/2 cuillère à soupe de bouillon de poulet/bœuf.",
+      "Coupez l'oignon vert, le piment et le tofu, l'oignon.",
+      "Faites bouillir pendant 2 min."
+    ],
+    "image": "/assets/recipesImages/kimchi_jigae.jpg"
+  },
+  {
+    "title": "Soupe de nouilles au poulet",
+    "description": "Cette soupe de nouilles au poulet réconfortante et délicieuse vous donnera envie de plus ! Elle est légère et faite avec un vrai bouillon de poulet.",
+    "rating": 9,
+    "serving": 2,
+    "ingredients": [
+      "Carcasse de poulet restante",
+      "Sel",
+      "Poivre",
+      "Poivre blanc",
+      "Sauce soja",
+      "Huile de sésame",
+      "Ail gingembre",
+      "Sauce d'huître",
+      "Sauce de poisson",
+      "Graines de sésame",
+      "Vin de riz",
+      "Carottes/Céleri/Oignons/Oignons verts"
+    ],
+    "steps": [
+      "Faites frire la carcasse, puis laissez mijoter lentement dans l'eau pendant 1 heure.",
+      "Retirez la carcasse et ajoutez les épices, puis remettez le poulet et les nouilles. Voilà !"
+    ],
+    "image": "/assets/recipesImages/chicken_noodle_soup.jpg"
+  },
+  {
+    "title": "Curry Rouge Thaï",
+    "description": "Facile à faire et un goût qui explosera votre bouche et votre cerveau. Épicé, aigre, sucré, ce plat vous revigorera !",
+    "rating": 10,
+    "serving": 6,
+    "ingredients": [
+      "Poudre de piment rouge : 1 cuillère à café",
+      "Sel (au goût)",
+      "Poivre (au goût)",
+      "Poudre de gingembre : 3 cuillères à café",
+      "Échalotes (tranchées, quantité selon préférence)",
+      "Poudre de poivre blanc (au goût)",
+      "Pâte de crevettes : 1 cuillère à soupe",
+      "Sucre : 2 cuillères à soupe",
+      "Sauce de poisson : 2 cuillères à soupe",
+      "Bouillon : 375 ml (légumes ou poulet)",
+      "Citronnelle : 3 tiges (écrasées)",
+      "Poulet : 500 g (coupé en morceaux)",
+      "Feuilles de basilic (thaï) (une poignée)",
+      "Oignon (tranché, 1)",
+      "Pâte de curry rouge thaï (4-5 cuillères à soupe, ajustez selon le goût)",
+      "Lait de coco : 400 ml (1 boîte)",
+      "Carottes (tranchées, 4 petites)",
+      "Poivron rouge (tranché, 2)",
+      "Piment (1)"
+    ],
+    "steps": [
+      "Dans une grande casserole ou un wok, chauffez un peu d'huile à feu moyen. Ajoutez les oignons et les échalotes tranchés, et faites-les sauter jusqu'à ce qu'ils deviennent translucides.",
+      "Incorporez la poudre de gingembre, la poudre de piment rouge et la poudre de poivre blanc. Cuisinez une minute jusqu'à ce que ce soit parfumé.",
+      "Ajoutez la pâte de curry rouge thaï dans la casserole. Remuez et cuisez pendant 2-3 minutes jusqu'à ce que la pâte devienne aromatique.",
+      "Ajoutez les morceaux de poulet dans la casserole. Bien mélanger pour enrober le poulet de la pâte de curry. Cuisinez jusqu'à ce que le poulet commence à dorer.",
+      "Ajoutez les tiges de citronnelle écrasées et la pâte de crevettes. Bien mélanger.",
+      "Versez le lait de coco et le bouillon. Bien mélanger et amenez le mélange à frémir doucement.",
+      "Ajoutez le sel, le poivre, le sucre et la sauce de poisson. Ajustez ces ingrédients selon votre préférence de goût.",
+      "Ajoutez les carottes tranchées et le poivron rouge. Mijotez à feu doux jusqu'à ce que les légumes soient tendres mais encore croquants.",
+      "Juste avant de servir, incorporez les feuilles de basilic pour la fraîcheur. Retirez les tiges de citronnelle.",
+      "Servez chaud avec du riz ou des nouilles. Pour améliorer : Ajoutez du citron vert"
+    ],
+    "image": "/assets/recipesImages/red_thai_curry.jpg"
+  },
+  {
+    "title": "Kimbap",
+    "description": "Ceci est un sushi polyvalent, super amusant à faire !",
+    "rating": 10,
+    "ingredients": [
+      "bœuf bulgogi",
+      "Chair de crabe",
+      "Carottes",
+      "Radis mariné",
+      "Avocat",
+      "Œuf",
+      "Concombre",
+      "Épinards",
+      "Spam",
+      "Thon",
+      "Saumon",
+      "Poivron rouge",
+      "Saucisse",
+      "Jambon",
+      "algue",
+      "Riz"
+    ],
+    "steps": [
+      "sautée, salez et cuisez/juliennez les carottes + épinards, œuf, concombre, poivron",
+      "Coupez tout en lanières",
+      "Cuisinez le riz et ajoutez du vinaigre de riz, de l'huile de sésame et des graines de sésame",
+      "Refroidissez le riz dans le réfrigérateur",
+      "Maintenant assemblez tout, le riz, l'algue et vos autres ingrédients",
+      "Bon appétit !"
+    ],
+    "image": "/assets/recipesImages/kimbap.jpg"
+  },
+  {
+    "title": "Salade de bœuf thaïlandaise ultime",
+    "rating": 9,
+    "description": "Cette salade de bœuf thaï est une salade rafraîchissante et piquante, parfaite pour un repas léger. C'est un excellent moyen d'utiliser des restes de steak.",
+    "prepTime": "15 minutes",
+    "cookTime": "20 minutes",
+    "serves": 4,
+    "ingredients": [
+      "1 cuillère à soupe d'huile végétale",
+      "2 x 200g de steaks de côte de bœuf",
+      "1 petit oignon",
+      "1 concombre",
+      "2 petites tomates",
+      "1 grand piment rouge",
+      "½ tasse de feuilles de menthe",
+      "¼ tasse d'oignon vert",
+      "Riz vapeur en option",
+      [
+        "marinade",
+        "1 cuillère à soupe de sauce de poisson",
+        "1 cuillère à café de sucre de palme ou de sucre brun",
+        "0.5 cuillère à café de poivre noir"
+      ],
+      [
+        "assaisonnement",
+        "3 cuillères à soupe de sauce de poisson",
+        "2 cuillères à soupe de sucre de palme ou de sucre brun",
+        "2 cuillères à soupe de jus de citron vert"
+      ]
+    ],
+    "steps": [
+      "Marinez les steaks avec les ingrédients de la marinade pendant 10 minutes.",
+      "Mélangez ensemble les ingrédients de l'assaisonnement.",
+      "Cuisinez les steaks dans l'huile chauffée selon votre préférence, laissez reposer, puis tranchez.",
+      "Combinezz les ingrédients de la salade avec le steak et l'assaisonnement dans un bol.",
+      "Servez avec du riz en option."
+    ],
+    "image": "/assets/recipesImages/thai_beef_salad.jpeg"
+  },
+  {
+    "title": "Riz frit au Kimchi (Kimchi-bokkeumbap)",
+    "description": "Ce plat simple, simple est super, super savoureux. C'est juste quelques ingrédients, mais c'est un plat très aimé par les Coréens et un pilier de notre vie quotidienne. Cette version est simple, mais vous pouvez la garnir avec un peu de bœuf, de poulet, de porc, de jambon ou même de spam. Beaucoup de Coréens aiment aussi mettre un œuf frit sur le dessus, mais ma famille préfère cette version simple que je vous montre ici.",
+    "rating": 8,
+    "serving": 2,
+    "ingredients": [
+      "3 bols de riz cuit à la vapeur (3 tasses)",
+      "1 tasse de kimchi haché (doit être bien fermenté et aigre)",
+      "¼ tasse de jus de kimchi",
+      "¼ tasse d'eau",
+      "2-3 cuillères à soupe de gochujang",
+      "3 cuillères à café d'huile de sésame grillé",
+      "1 cuillère à café d'huile végétale",
+      "1 oignon vert, haché",
+      "1 cuillère à soupe de graines de sésame grillées",
+      "1 feuille de gim, grillée et déchirée en lanières d'algue"
+    ],
+    "steps": [
+      "Chauffez une large poêle ou une poêle plate. Ajoutez l'huile végétale.",
+      "Ajoutez le kimchi et faites-le sauter pendant 1 minute à feu moyen-élevé.",
+      "Ajoutez le riz, le jus de kimchi, l'eau et le gochujang. Mélangez tous les ingrédients pendant environ 7 minutes avec une cuillère en bois.",
+      "Ajoutez l'huile de sésame et retirez du feu.",
+      "Garnissez avec l'oignon vert haché, le gim grillé et les graines de sésame. Servez immédiatement."
+    ],
+    "image": "/assets/recipesImages/kimchi_fried_rice.jpg"
+  }
+]

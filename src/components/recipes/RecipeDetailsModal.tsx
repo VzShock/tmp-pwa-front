@@ -15,6 +15,13 @@ interface RecipeDetailsModalProps {
   rating: number;
 }
 
+type IngredientItem = string | { title: string; items: string[] };
+
+interface IngredientState {
+  name: IngredientItem;
+  checked: boolean;
+}
+
 const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   title,
   description,
@@ -30,14 +37,23 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   const tabOrder = ["ingredients", "preview"];
   const [direction, setDirection] = useState(0);
   const [lastTab, setLastTab] = useState("");
-  const [username, setUsername] = useState("");
   const [ingredientsList, setIngredientsList] = useState<string[]>([]);
   const [stepsList, setStepsList] = useState<string[]>([]);
-  const [ingredientStates, setIngredientStates] = useState(
-    ingredients.map((ingredient) => ({
-      name: ingredient,
-      checked: false,
-    }))
+  const [ingredientStates, setIngredientStates] = useState<IngredientState[]>(
+    ingredients.map((ingredient) => {
+      // Check if the ingredient is an array and handle accordingly
+      if (Array.isArray(ingredient)) {
+        return {
+          name: { title: ingredient[0], items: ingredient.slice(1) },
+          checked: false,
+        };
+      } else {
+        return {
+          name: ingredient,
+          checked: false,
+        };
+      }
+    })
   );
 
   const tabVariants = {
@@ -182,33 +198,60 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
     );
   };
 
-  const getIngredients = () => (
-    <div>
-      <h5 className="mb-6">Ingredients</h5>
-      <ul className=" space-y-2">
-        {ingredientStates.map((ingredient, index) => (
-          <li key={index} className="flex items-center">
-            <input
-              id={`ingredient-checkbox-${index}`}
-              type="checkbox"
-              checked={ingredient.checked}
-              onChange={() => handleIngredientCheck(index)}
-              className="w-10 h-10" // Larger checkbox
-            />
-            <label
-              htmlFor={`ingredient-checkbox-${index}`}
-              className="ml-2 text-xl"
-              style={{ userSelect: "none" }}
-            >
-              {" "}
-              {/* Larger text */}
-              {ingredient.name}
-            </label>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  const getIngredients = () => {
+    const renderIngredientItem = (
+      ingredient: IngredientState,
+      index: number
+    ) => (
+      <li key={index} className="flex items-center">
+        <input
+          id={`ingredient-checkbox-${index}`}
+          type="checkbox"
+          checked={ingredient.checked}
+          onChange={() => handleIngredientCheck(index)}
+          className="w-4 h-4"
+        />
+        <label htmlFor={`ingredient-checkbox-${index}`} className="ml-2">
+          {typeof ingredient.name === "string"
+            ? ingredient.name
+            : ingredient.name.title}
+        </label>
+      </li>
+    );
+
+    const renderNestedIngredientList = (
+      ingredient: { title: string; items: string[] },
+      parentIndex: number
+    ) => (
+      <div key={`nested-${parentIndex}`} className="pl-4">
+        <strong>{ingredient.title}</strong>
+        <ul>
+          {ingredient.items &&
+            ingredient.items.map((item, index) => (
+              <li key={`${parentIndex}-${index}`} className="ml-2">
+                {item}
+              </li>
+            ))}
+        </ul>
+      </div>
+    );
+
+    return (
+      <div>
+        <h5 className="mb-6">Ingredients</h5>
+        <ul className="space-y-2">
+          {ingredientStates.map((ingredient, index) =>
+            typeof ingredient.name === "string"
+              ? renderIngredientItem(ingredient, index)
+              : renderNestedIngredientList(
+                  ingredient.name as { title: string; items: string[] },
+                  index
+                )
+          )}
+        </ul>
+      </div>
+    );
+  };
 
   return (
     <div className={styles.modalOverlay}>
