@@ -157,32 +157,32 @@ const SpringModal = ({
   );
 };
 
-const NavLink = ({ children, href }: NavLinkProps) => {
-  return (
-    <a
-      onClick={() => {
-        if (href === "/login") {
-          localStorage.clear();
-        }
-      }}
-      href={href}
-      rel="nofollow"
-      className="block overflow-hidden"
-      style={{ color: "#fff", textDecoration: "none" }}
-    >
-      <motion.div
-        whileHover={{ y: -20 }}
-        transition={{ ease: "backInOut", duration: 0.5 }}
-        className="h-[20px]"
-      >
-        <span className="flex h-[20px] items-center">{children}</span>
-        <span className="flex h-[20px] items-center text-neutral-50">
-          {children}
-        </span>
-      </motion.div>
-    </a>
-  );
-};
+// const NavLink = ({ children, href }: NavLinkProps) => {
+//   return (
+//     <a
+//       onClick={() => {
+//         if (href === "/login") {
+//           localStorage.clear();
+//         }
+//       }}
+//       href={href}
+//       rel="nofollow"
+//       className="block overflow-hidden"
+//       style={{ color: "#fff", textDecoration: "none" }}
+//     >
+//       <motion.div
+//         whileHover={{ y: -20 }}
+//         transition={{ ease: "backInOut", duration: 0.5 }}
+//         className="h-[20px]"
+//       >
+//         <span className="flex h-[20px] items-center">{children}</span>
+//         <span className="flex h-[20px] items-center text-neutral-50">
+//           {children}
+//         </span>
+//       </motion.div>
+//     </a>
+//   );
+// };
 
 const MySaved = ({
   isOpen,
