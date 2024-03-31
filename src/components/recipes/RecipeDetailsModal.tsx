@@ -40,23 +40,27 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
   const [ingredientsList, setIngredientsList] = useState<string[]>([]);
   const [stepsList, setStepsList] = useState<string[]>([]);
   const [ingredientStates, setIngredientStates] = useState<IngredientState[]>(
-    ingredients.map((ingredient): IngredientState => {
-      // Assuming `ingredient` can be a complex object based on your mapping logic
-      if (
-        typeof ingredient === "object" &&
-        "title" in ingredient &&
-        Array.isArray(ingredient.items)
-      ) {
-        return {
-          name: { title: ingredient.title, items: ingredient.items },
-          checked: false,
+    ingredients.map((ingredient: IngredientItem): IngredientState => {
+      // Explicitly check and cast ingredient to the complex type if it matches the expected structure
+      if (typeof ingredient === "object" && "title" in ingredient) {
+        // Now we need to assert that ingredient is of the correct complex type
+        const complexIngredient = ingredient as {
+          title: string;
+          items: string[];
         };
-      } else {
-        return {
-          name: ingredient,
-          checked: false,
-        };
+
+        if (Array.isArray(complexIngredient.items)) {
+          return {
+            name: complexIngredient, // Directly use complexIngredient here
+            checked: false,
+          };
+        }
       }
+      // For simple strings or any objects that don't match the complex structure
+      return {
+        name: ingredient, // It's safe to use ingredient directly here as it defaults to the simple case
+        checked: false,
+      };
     })
   );
 
