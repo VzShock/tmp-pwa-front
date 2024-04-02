@@ -308,5 +308,30 @@
       "Garnissez avec l'oignon vert haché, le gim grillé et les graines de sésame. Servez immédiatement."
     ],
     "image": "/assets/recipesImages/kimchi_fried_rice.jpg"
+  },
+  {
+    "title": "Ailes de poulet Buffalo",
+    "description": "Les ailes de poulet Buffalo sont un plat classique de la cuisine américaine. Elles sont épicées, savoureuses et parfaites pour les fêtes.",
+    "rating": 9,
+    "serving": 3,
+    "ingredients": [
+      "750g d'ailes de poulet",
+      "1 tasse de sauce piquante (Franks hot sauce)",
+      "2 cuillères à soupe de beurre",
+      "1 cuillère à soupe de sauce Worcestershire",
+      "1 cuillère à soupe de miel",
+      "1/2 cuillère à café de poudre d'ail",
+      "1 cuillère à café de paprika"
+    ],
+    "steps": [
+      "Préchauffez le four à 200°C.",
+      "Faites cuire les ailes de poulet au four pendant 30/45 minutes.",
+      "Pendant ce temps, faites fondre le beurre dans une casserole à feu moyen.",
+      "Ajoutez la sauce piquante, la sauce Worcestershire, le miel, la poudre d'ail et le paprika.",
+      "Laissez mijoter pendant 5 minutes.",
+      "Retirez les ailes de poulet du four et mélangez-les avec la sauce.",
+      "Servez chaud."
+    ],
+    "image": "/assets/recipesImages/buffalo_wings.jpg"
   }
 ]

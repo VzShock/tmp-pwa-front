@@ -308,5 +308,30 @@
       "Garnish with sprinkled chopped green onion, roasted gim, and sesame seeds. Serve right away."
     ],
     "image": "/assets/recipesImages/kimchi_fried_rice.jpg"
+  },
+  {
+    "title": "Buffalo Chicken Wings",
+    "description": "Buffalo chicken wings are a classic American dish that is perfect for parties, game days, or just a fun dinner. They are spicy, tangy, and delicious, and they are sure to be a hit with your friends and family.",
+    "rating": 9,
+    "serving": 3,
+    "ingredients": [
+      "750g chicken wings",
+      "1 cup Franks hot sauce",
+      "2 tbsp butter",
+      "1 tbsp Worcestershire sauce",
+      "1 tbsp honey",
+      "1/2 tsp garlic powder",
+      "1 tsp paprika"
+    ],
+    "steps": [
+      "Warmup hoven 200°C.",
+      "Cook wings during 30/45 minutes.",
+      "Melt butter in a saucepan over medium heat.",
+      "Add hot sauce, Worcestershire sauce, honey, garlic powder, and paprika to the saucepan.",
+      "Laissez mijoter pendant 5 minutes.",
+      "Remove the wings from the oven and toss them in the sauce.",
+      "Servez chaud."
+    ],
+    "image": "/assets/recipesImages/buffalo_wings.jpg"
   }
 ]

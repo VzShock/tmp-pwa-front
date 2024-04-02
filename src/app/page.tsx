@@ -47,10 +47,12 @@ export default function Home() {
       const response = await fetch(filePath);
       const data = await response.json();
       setRecipes(
-        data.map((recipe: any, index: number) => ({
-          ...recipe,
-          id: String(index),
-        }))
+        data
+          .map((recipe: any, index: number) => ({
+            ...recipe,
+            id: String(index),
+          }))
+          .reverse()
       );
     };
     fetchRecipes();
