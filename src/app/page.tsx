@@ -58,6 +58,21 @@ export default function Home() {
     fetchRecipes();
   }, [language]);
 
+  useEffect(() => {
+    if (isModalOpen) {
+      // Disable scroll of the body by adding CSS property not a class
+      document.body.style.overflow = "hidden";
+    } else {
+      // Enable scroll of the body by removing the CSS property
+      document.body.style.overflow = "";
+    }
+
+    // Cleanup function to ensure scroll is always enabled when component unmounts
+    return () => {
+      document.body.classList.remove("noScroll");
+    };
+  }, [isModalOpen]);
+
   const openModalWithRecipe = (recipe: Recipe) => {
     setSelectedRecipe(recipe);
     setIsModalOpen(true);
