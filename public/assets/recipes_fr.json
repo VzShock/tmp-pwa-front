@@ -26,7 +26,8 @@
       "Tout d'abord, ajoutez du sel au chou, aux concombres et aux carottes pendant plus de 20 min",
       "Rincez le sel, puis pressez pour enlever l'eau",
       "Ajoutez la sauce"
-    ]
+    ],
+    "categories": ["Asian", "Salad", "Healthy", "Vegetarian"]
   },
   {
     "title": "Salade de concombre à la coréenne",
@@ -49,7 +50,8 @@
       "Salez les concombres et laissez reposer toute la nuit",
       "Égouttez et pressez pour enlever l'excès d'eau.",
       "Ajoutez la sauce, et bon appétit !"
-    ]
+    ],
+    "categories": ["Korean", "Salad", "Spicy", "Vegetarian"]
   },
   {
     "title": "Poulet collant à la coréenne",
@@ -72,7 +74,8 @@
       "Chauffez la sauce jusqu'à ce qu'elle bouillonne et ajoutez le poulet.",
       "Garnissez de graines de sésame et d'oignons verts."
     ],
-    "image": "/assets/recipesImages/korean_sticky_chicken.jpg"
+    "image": "/assets/recipesImages/korean_sticky_chicken.jpg",
+    "categories": ["Korean", "Chicken", "Spicy"]
   },
   {
     "title": "Boeuf Bourguignon",
@@ -106,7 +109,8 @@
       "Si le bœuf n'est pas entièrement submergé, alors ajoutez le bouillon pour couvrir. Ajoutez les feuilles de laurier et le thym. Laissez mijoter à feu très doux pendant 2-4 heures.",
       "Préparez les champignons à mettre dessus. Et voilà !"
     ],
-    "image": "/assets/recipesImages/boeuf_bourguignon.jpg"
+    "image": "/assets/recipesImages/boeuf_bourguignon.jpg",
+    "categories": ["French", "Beef", "Stew"]
   },
   {
     "title": "Kimchi Jigae",
@@ -145,7 +149,8 @@
       "Coupez l'oignon vert, le piment et le tofu, l'oignon.",
       "Faites bouillir pendant 2 min."
     ],
-    "image": "/assets/recipesImages/kimchi_jigae.jpg"
+    "image": "/assets/recipesImages/kimchi_jigae.jpg",
+    "categories": ["Korean", "Soup", "Spicy", "Comfort Food"]
   },
   {
     "title": "Soupe de nouilles au poulet",
@@ -170,7 +175,8 @@
       "Faites frire la carcasse, puis laissez mijoter lentement dans l'eau pendant 1 heure.",
       "Retirez la carcasse et ajoutez les épices, puis remettez le poulet et les nouilles. Voilà !"
     ],
-    "image": "/assets/recipesImages/chicken_noodle_soup.jpg"
+    "image": "/assets/recipesImages/chicken_noodle_soup.jpg",
+    "categories": ["Soup", "Chicken", "Comfort Food"]
   },
   {
     "title": "Curry Rouge Thaï",
@@ -210,7 +216,8 @@
       "Juste avant de servir, incorporez les feuilles de basilic pour la fraîcheur. Retirez les tiges de citronnelle.",
       "Servez chaud avec du riz ou des nouilles. Pour améliorer : Ajoutez du citron vert"
     ],
-    "image": "/assets/recipesImages/red_thai_curry.jpg"
+    "image": "/assets/recipesImages/red_thai_curry.jpg",
+    "categories": ["Thai", "Spicy"]
   },
   {
     "title": "Kimbap",
@@ -242,7 +249,8 @@
       "Maintenant assemblez tout, le riz, l'algue et vos autres ingrédients",
       "Bon appétit !"
     ],
-    "image": "/assets/recipesImages/kimbap.jpg"
+    "image": "/assets/recipesImages/kimbap.jpg",
+    "categories": ["Korean", "Sushi", "Seafood"]
   },
   {
     "title": "Salade de bœuf thaïlandaise ultime",
@@ -281,7 +289,8 @@
       "Combinezz les ingrédients de la salade avec le steak et l'assaisonnement dans un bol.",
       "Servez avec du riz en option."
     ],
-    "image": "/assets/recipesImages/thai_beef_salad.jpeg"
+    "image": "/assets/recipesImages/thai_beef_salad.jpeg",
+    "categories": ["Thai", "Beef", "Salad"]
   },
   {
     "title": "Riz frit au Kimchi (Kimchi-bokkeumbap)",
@@ -307,7 +316,8 @@
       "Ajoutez l'huile de sésame et retirez du feu.",
       "Garnissez avec l'oignon vert haché, le gim grillé et les graines de sésame. Servez immédiatement."
     ],
-    "image": "/assets/recipesImages/kimchi_fried_rice.jpg"
+    "image": "/assets/recipesImages/kimchi_fried_rice.jpg",
+    "categories": ["Korean", "Comfort Food"]
   },
   {
     "title": "Ailes de poulet Buffalo",
@@ -332,6 +342,42 @@
       "Retirez les ailes de poulet du four et mélangez-les avec la sauce.",
       "Servez chaud."
     ],
-    "image": "/assets/recipesImages/buffalo_wings.jpg"
+    "image": "/assets/recipesImages/buffalo_wings.jpg",
+    "categories": ["American", "Chicken"]
+  },
+  {
+    "title": "Crevettes sautées au curry",
+    "description": "Ces crevettes sautées au curry sont un plat rapide et facile à préparer. Elles sont savoureuses et parfaites pour un repas en semaine.",
+    "rating": 10,
+    "serving": 4,
+    "ingredients": [
+      "24 crevettes décortiquées",
+      "1 gousses d'ail",
+      "3 cuil. à soupe d'huile d'olive",
+      "1.5 verres de riz cru",
+      "sel et poivre",
+      [
+        "Pour la sauce",
+        "3 cuillères à soupe d'huile d'olive",
+        "1 cuillère à soupe de sauce soja",
+        "1 cuillère à soupe de vinaigre balsamique",
+        "1 cuillère à café de cumin en poudre",
+        "1 cuillère à café de curry en poudre",
+        "8 brins de coriandre pour servir"
+      ]
+    ],
+    "steps": [
+      "Pour la marinade, épluchez la gousse d'ail (ôtez le germe s'il y en a un) et écrasez-la à l'aide d'un presse-ail.",
+      "Dans une assiette creuse, mélangez l'huile d'olive et l'ail écrasé. Salez et poivrez.",
+      "Ajoutez les crevettes et laissez-les mariner quelques instants.",
+      "Dans une casserole d'eau bouillante salée, faites cuire le riz comme indiqué sur le paquet.",
+      "Pendant ce temps, préparez la sauce : dans un bol, mélangez l'huile d'olive, la sauce soja, le vinaigre balsamique, le cumin et le curry.",
+      "Lavez et coupez finement la coriandre.",
+      "Dans une poêle antiadhésive, faites sauter les crevettes 3 min de chaque côté.",
+      "Répartissez le riz dans 4 bols puis ajoutez par-dessus les crevettes.",
+      "Parsemez le tout de coriandre ciselée et servez illico presto accompagné d'un ramequin de sauce."
+    ],
+    "image": "/assets/recipesImages/fried_shrimp_rice.jpeg",
+    "categories": ["Seafood", "Healthy", "Quick Meal"]
   }
 ]

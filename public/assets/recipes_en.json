@@ -26,7 +26,8 @@
       "First of all add salt to the cabbage, cucumbers and carrots for 20+ mins",
       "Wash off salt, then squeeze water",
       "Add the sauce"
-    ]
+    ],
+    "categories": ["Asian", "Salad", "Healthy", "Vegetarian"]
   },
   {
     "title": "Korean cucumber salad",
@@ -49,7 +50,8 @@
       "Salt cucumbers and leave overnight",
       "Drain and squeeze out excess water.",
       "Add the sauce, enjoy!"
-    ]
+    ],
+    "categories": ["Korean", "Salad", "Spicy", "Vegetarian"]
   },
   {
     "title": "Korean Sticky Chicken",
@@ -72,7 +74,8 @@
       "Heat the sauce until it bubbles and add chicken.",
       "Garnish with sesame seeds and scallions."
     ],
-    "image": "/assets/recipesImages/korean_sticky_chicken.jpg"
+    "image": "/assets/recipesImages/korean_sticky_chicken.jpg",
+    "categories": ["Korean", "Chicken", "Spicy"]
   },
   {
     "title": "Beef Bourguignon",
@@ -106,7 +109,8 @@
       "If the beef is not fully submerged, then add the stock to cover. Add bay leaves and thyme. 2-4 hours simmer on lowest heat.",
       "Make the mushrooms to put on top. Et voila!"
     ],
-    "image": "/assets/recipesImages/boeuf_bourguignon.jpg"
+    "image": "/assets/recipesImages/boeuf_bourguignon.jpg",
+    "categories": ["French", "Beef", "Stew"]
   },
   {
     "title": "Kimchi Jigae",
@@ -145,7 +149,8 @@
       "Chop green onion, chili, and tofu, onion.",
       "Boil for 2 mins."
     ],
-    "image": "/assets/recipesImages/kimchi_jigae.jpg"
+    "image": "/assets/recipesImages/kimchi_jigae.jpg",
+    "categories": ["Korean", "Soup", "Spicy", "Comfort Food"]
   },
   {
     "title": "Chicken Noodle Soup",
@@ -170,7 +175,8 @@
       "Fry the carcass, then simmer slowly in water for 1 hour.",
       "Remove carcass and add the spices, then add back in chicken and noodles. Voila!"
     ],
-    "image": "/assets/recipesImages/chicken_noodle_soup.jpg"
+    "image": "/assets/recipesImages/chicken_noodle_soup.jpg",
+    "categories": ["Soup", "Chicken", "Comfort Food"]
   },
   {
     "title": "Red Thai Curry",
@@ -210,7 +216,8 @@
       "Just before serving, stir in the basil leaves for freshness. Remove the lemongrass stalks.",
       "Serve hot with rice or noodles. To make better: Add lime"
     ],
-    "image": "/assets/recipesImages/red_thai_curry.jpg"
+    "image": "/assets/recipesImages/red_thai_curry.jpg",
+    "categories": ["Thai", "Spicy"]
   },
   {
     "title": "Kimbap",
@@ -242,7 +249,8 @@
       "Now assemble everything , rice, seaweed and your other ingredients",
       "Bon appetite!"
     ],
-    "image": "/assets/recipesImages/kimbap.jpg"
+    "image": "/assets/recipesImages/kimbap.jpg",
+    "categories": ["Korean", "Sushi", "Seafood"]
   },
   {
     "title": "Ultimate Thai Beef Salad",
@@ -281,7 +289,8 @@
       "Combine salad ingredients with steak and dressing in a bowl.",
       "Serve with optional rice."
     ],
-    "image": "/assets/recipesImages/thai_beef_salad.jpeg"
+    "image": "/assets/recipesImages/thai_beef_salad.jpeg",
+    "categories": ["Thai", "Beef", "Salad"]
   },
   {
     "title": "Kimchi Fried Rice (Kimchi-bokkeumbap)",
@@ -307,7 +316,8 @@
       "Add sesame oil and remove from the heat.",
       "Garnish with sprinkled chopped green onion, roasted gim, and sesame seeds. Serve right away."
     ],
-    "image": "/assets/recipesImages/kimchi_fried_rice.jpg"
+    "image": "/assets/recipesImages/kimchi_fried_rice.jpg",
+    "categories": ["Korean", "Comfort Food"]
   },
   {
     "title": "Buffalo Chicken Wings",
@@ -332,6 +342,42 @@
       "Remove the wings from the oven and toss them in the sauce.",
       "Servez chaud."
     ],
-    "image": "/assets/recipesImages/buffalo_wings.jpg"
+    "image": "/assets/recipesImages/buffalo_wings.jpg",
+    "categories": ["American", "Chicken"]
+  },
+  {
+    "title": "Sautéed Curry Shrimp",
+    "description": "These sautéed curry shrimp are a quick and easy dish to prepare. They are flavorful and perfect for a weeknight meal.",
+    "rating": 10,
+    "serving": 4,
+    "ingredients": [
+      "24 peeled shrimp",
+      "1 clove of garlic",
+      "3 tablespoons olive oil",
+      "1.5 cups of raw rice",
+      "salt and pepper",
+      [
+        "For the sauce",
+        "3 tablespoons olive oil",
+        "1 tablespoon soy sauce",
+        "1 tablespoon balsamic vinegar",
+        "1 teaspoon ground cumin",
+        "1 teaspoon curry powder",
+        "8 sprigs of cilantro for serving"
+      ]
+    ],
+    "steps": [
+      "For the marinade, peel the garlic clove (remove the germ if there is one) and crush it using a garlic press.",
+      "In a shallow dish, mix the olive oil and crushed garlic. Season with salt and pepper.",
+      "Add the shrimp and let them marinate for a few moments.",
+      "In a pot of boiling salted water, cook the rice according to the package instructions.",
+      "Meanwhile, prepare the sauce: in a bowl, mix the olive oil, soy sauce, balsamic vinegar, cumin, and curry.",
+      "Wash and finely chop the cilantro.",
+      "In a non-stick skillet, sauté the shrimp for 3 minutes on each side.",
+      "Divide the rice among 4 bowls and top with the shrimp.",
+      "Sprinkle with chopped cilantro and serve immediately with a side of sauce."
+    ],
+    "image": "/assets/recipesImages/fried_shrimp_rice.jpeg",
+    "categories": ["Seafood", "Healthy", "Quick Meal"]
   }
 ]

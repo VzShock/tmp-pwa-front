@@ -18,6 +18,7 @@ type Recipe = {
   image: string;
   createdAt: string;
   rating: number;
+  categories: string[];
 };
 
 export default function Home() {
@@ -26,20 +27,7 @@ export default function Home() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [language, setLanguage] = useState("fr");
-
-  // const generateRandomRecipes = (): Recipe[] => {
-  //   return Array.from({ length: 5 }).map((_, index) => ({
-  //     id: String(index),
-  //     title: `Random Recipe ${index + 1}`,
-  //     description: "A delicious random recipe.",
-  //     ingredients: ["Ingredient 1", "Ingredient 2"],
-  //     steps: ["Step 1", "Step 2"],
-  //     pictures: [
-  //       "https://www.bienmanger.com/tinyMceData/images/contents/851/content_lg.jpg",
-  //     ],
-  //     createdAt: new Date().toISOString(),
-  //   }));
-  // };
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -60,14 +48,11 @@ export default function Home() {
 
   useEffect(() => {
     if (isModalOpen) {
-      // Disable scroll of the body by adding CSS property not a class
       document.body.style.overflow = "hidden";
     } else {
-      // Enable scroll of the body by removing the CSS property
       document.body.style.overflow = "";
     }
 
-    // Cleanup function to ensure scroll is always enabled when component unmounts
     return () => {
       document.body.classList.remove("noScroll");
     };
@@ -78,9 +63,46 @@ export default function Home() {
     setIsModalOpen(true);
   };
 
-  const filteredRecipes = recipes.filter((recipe) =>
-    recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const getCompatibleCategories = () => {
+    if (selectedCategories.length === 0) {
+      return uniqueCategories;
+    }
+
+    const compatibleCategories = new Set<string>();
+
+    recipes.forEach((recipe) => {
+      if (selectedCategories.every((cat) => recipe.categories.includes(cat))) {
+        recipe.categories.forEach((cat) => compatibleCategories.add(cat));
+      }
+    });
+
+    // Sort the categories alphabetically and return them as an array
+    const sortedCategories = Array.from(compatibleCategories).sort((a, b) =>
+      a.localeCompare(b)
+    );
+
+    return sortedCategories;
+  };
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategories((prevCategories) =>
+      prevCategories.includes(category)
+        ? prevCategories.filter((cat) => cat !== category)
+        : [...prevCategories, category]
+    );
+  };
+
+  const filteredRecipes = recipes.filter((recipe) => {
+    const matchesSearchTerm = recipe.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesCategories =
+      selectedCategories.length === 0 ||
+      selectedCategories.every((category) =>
+        recipe.categories.includes(category)
+      );
+    return matchesSearchTerm && matchesCategories;
+  });
 
   const recipeCards = filteredRecipes.map((recipe) => (
     <div key={recipe.id} className="flex justify-center pb-4">
@@ -93,6 +115,14 @@ export default function Home() {
     </div>
   ));
 
+  const uniqueCategories = Array.from(
+    new Set(
+      recipes
+        .flatMap((recipe) => recipe.categories)
+        .sort((a, b) => a.localeCompare(b))
+    )
+  );
+
   return (
     <div className="pt-24">
       <div className="container p-4">
@@ -102,59 +132,32 @@ export default function Home() {
           language={language}
           setLanguage={setLanguage}
         />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: "20px",
-          }}
-        >
-          <motion.div
-            whileHover={{
-              rotate: 3600,
-              scale: 1.1,
-              transition: {
-                rotate: { duration: 20, ease: "linear" },
-                scale: { duration: 0.3 },
-              },
-            }}
-            style={{
-              display: "inline-block", // Ensure the motion div wraps tightly around the icon
-            }}
-          ></motion.div>
+        <div className="container mb-4 d-flex justify-content-center">
+          <div className="row">
+            <div className="col">
+              {getCompatibleCategories().map((category) => (
+                <button
+                  key={category}
+                  className={`btn btn-sm m-1`}
+                  style={
+                    selectedCategories.includes(category)
+                      ? { backgroundColor: "#63a375", color: "white" }
+                      : { backgroundColor: "#ff84e8", color: "white" }
+                  }
+                  onClick={() => handleCategoryClick(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
-
-        {/* <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: "20px",
-            width: "100%", // Ensure the container takes full width
-          }}
-        >
-          <input
-            className="w-2/4 sm:w-100 form-control"
-            type="text"
-            placeholder="Search for a recipe..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            style={{
-              // width: "50%", // Adjust this value as needed
-              margin: "0 auto", // Center the input within the div
-            }}
-          />
-        </div> */}
-
-        {/* Display a message if there are no recipes */}
         {recipes.length === 0 ||
           (filteredRecipes.length === 0 && (
             <div className="ml-80 mr-80 h-16  bg-white flex italic text-neutral-500 items-center justify-center">
               <p>No recipes yet.</p>
             </div>
           ))}
-
         <div className="">{recipeCards}</div>
         <AnimatePresence>
           {isModalOpen && selectedRecipe && (
@@ -173,7 +176,7 @@ export default function Home() {
                 className="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-y-auto h-full"
               >
                 <RecipeDetailsModal
-                  {...selectedRecipe} // TypeScript knows selectedRecipe is not null here
+                  {...selectedRecipe}
                   onClose={() => setIsModalOpen(false)}
                 />
               </motion.div>
