@@ -76,12 +76,20 @@ export default function Home() {
       }
     });
 
-    // Sort the categories alphabetically and return them as an array
-    const sortedCategories = Array.from(compatibleCategories).sort((a, b) =>
-      a.localeCompare(b)
+    const allCategories = Array.from(compatibleCategories);
+    const selected = allCategories.filter((cat) =>
+      selectedCategories.includes(cat)
+    );
+    const notSelected = allCategories.filter(
+      (cat) => !selectedCategories.includes(cat)
     );
 
-    return sortedCategories;
+    // Sort both arrays alphabetically
+    const sortedSelected = selected.sort((a, b) => a.localeCompare(b));
+    const sortedNotSelected = notSelected.sort((a, b) => a.localeCompare(b));
+
+    // Combine selected and not selected categories, with selected ones first
+    return [...sortedSelected, ...sortedNotSelected];
   };
 
   const handleCategoryClick = (category: string) => {
