@@ -12,7 +12,7 @@
 
 .recipecard:hover {
   transition: all 0.2s ease-in-out;
-  transform: scale(1.01);
+  transform: scale(1.15);
 }
 
 .diamond {

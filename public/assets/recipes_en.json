@@ -58,6 +58,7 @@
     "description": "This Korean sticky chicken will go very well with rice and will make your tastebuds dance!",
     "rating": 8.5,
     "serving": "Varies",
+    "image": "/assets/recipesImages/korean_sticky_chicken.jpg",
     "ingredients": [
       "1 pound skinless and boneless chicken breasts, sliced into large chunks",
       "2 tablespoons gochugaru (Korean red chili flakes)",
@@ -74,7 +75,6 @@
       "Heat the sauce until it bubbles and add chicken.",
       "Garnish with sesame seeds and scallions."
     ],
-    "image": "/assets/recipesImages/korean_sticky_chicken.jpg",
     "categories": ["Korean", "Chicken", "Spicy"]
   },
   {
@@ -82,6 +82,7 @@
     "description": "This boeuf bourguignon is a prestigious speciality which will make your tastebuds melt. Feel like a queen!",
     "rating": 8,
     "serving": 4,
+    "image": "/assets/recipesImages/boeuf_bourguignon.jpg",
     "ingredients": [
       "1kg beef",
       "750 ml red wine",
@@ -109,7 +110,6 @@
       "If the beef is not fully submerged, then add the stock to cover. Add bay leaves and thyme. 2-4 hours simmer on lowest heat.",
       "Make the mushrooms to put on top. Et voila!"
     ],
-    "image": "/assets/recipesImages/boeuf_bourguignon.jpg",
     "categories": ["French", "Beef", "Stew"]
   },
   {
@@ -117,6 +117,7 @@
     "description": "This Kimchi Jigae is powerful and comforting, spicy and full of flavor! Save this for a rainy day.",
     "rating": 9,
     "serving": 6,
+    "image": "/assets/recipesImages/kimchi_jigae.jpg",
     "ingredients": [
       "1 tbsp gochugaru",
       "1/2 tbsp soy sauce",
@@ -149,7 +150,6 @@
       "Chop green onion, chili, and tofu, onion.",
       "Boil for 2 mins."
     ],
-    "image": "/assets/recipesImages/kimchi_jigae.jpg",
     "categories": ["Korean", "Soup", "Spicy", "Comfort Food"]
   },
   {
@@ -157,6 +157,7 @@
     "description": "This comforting and delicious chicken noodle soup will leave you wanting more! It’s light and made with real chicken broth.",
     "rating": 9,
     "serving": 2,
+    "image": "/assets/recipesImages/chicken_noodle_soup.jpg",
     "ingredients": [
       "Leftover carcass of chicken",
       "Salt",
@@ -175,7 +176,6 @@
       "Fry the carcass, then simmer slowly in water for 1 hour.",
       "Remove carcass and add the spices, then add back in chicken and noodles. Voila!"
     ],
-    "image": "/assets/recipesImages/chicken_noodle_soup.jpg",
     "categories": ["Soup", "Chicken", "Comfort Food"]
   },
   {
@@ -183,6 +183,7 @@
     "description": "Easy to make and a taste that will explode your mouth and brain. Spicy, sour, sweet, this dish will revive you!",
     "rating": 10,
     "serving": 6,
+    "image": "/assets/recipesImages/red_thai_curry.jpg",
     "ingredients": [
       "Red chili powder: 1 tsp",
       "Salt (to taste)",
@@ -216,13 +217,14 @@
       "Just before serving, stir in the basil leaves for freshness. Remove the lemongrass stalks.",
       "Serve hot with rice or noodles. To make better: Add lime"
     ],
-    "image": "/assets/recipesImages/red_thai_curry.jpg",
     "categories": ["Thai", "Spicy"]
   },
   {
     "title": "Kimbap",
     "description": "This is a versatile sushi, which is super fun to make!",
     "rating": 10,
+    "serving": null,
+    "image": "/assets/recipesImages/kimbap.jpg",
     "ingredients": [
       "beef bulgogi",
       "Crabmeat",
@@ -246,19 +248,19 @@
       "Cut everything to strips",
       "Cook the rice and add rice vinegar, sesame oil and sesame seeds",
       "Cool the rice in the fridge",
-      "Now assemble everything , rice, seaweed and your other ingredients",
+      "Now assemble everything, rice, seaweed and your other ingredients",
       "Bon appetite!"
     ],
-    "image": "/assets/recipesImages/kimbap.jpg",
     "categories": ["Korean", "Sushi", "Seafood"]
   },
   {
     "title": "Ultimate Thai Beef Salad",
+    "description": "This beef salad is a refreshing and zesty salad that is perfect for a light meal. It is a great way to use up leftover steak.",
     "rating": 9,
-    "description": "Tgau beef salad is a refreshing and zesty salad that is perfect for a light meal. It is a great way to use up leftover steak.",
     "prepTime": "15 minutes",
     "cookTime": "20 minutes",
     "serves": 4,
+    "image": "/assets/recipesImages/thai_beef_salad.jpeg",
     "ingredients": [
       "1 tbsp vegetable oil",
       "2 x 200g beef rib eye steaks",
@@ -269,18 +271,20 @@
       "½ cup mint leaves",
       "¼ cup spring onion",
       "Optional steamed rice",
-      [
-        "marinade",
-        "1tbsp fish sauce",
-        "1tsp palm sugar or brown sugar",
-        "0.5 tsp black pepper"
-      ],
-      [
-        "dressing",
-        "3tbsp fish sauce",
-        "2tbsp palm sugar or brown sugar",
-        "2tbsp lime juice"
-      ]
+      {
+        "marinade": [
+          "1tbsp fish sauce",
+          "1tsp palm sugar or brown sugar",
+          "0.5 tsp black pepper"
+        ]
+      },
+      {
+        "dressing": [
+          "3tbsp fish sauce",
+          "2tbsp palm sugar or brown sugar",
+          "2tbsp lime juice"
+        ]
+      }
     ],
     "steps": [
       "Marinate the steaks with marinade ingredients for 10 minutes.",
@@ -289,7 +293,6 @@
       "Combine salad ingredients with steak and dressing in a bowl.",
       "Serve with optional rice."
     ],
-    "image": "/assets/recipesImages/thai_beef_salad.jpeg",
     "categories": ["Thai", "Beef", "Salad"]
   },
   {
@@ -297,6 +300,7 @@
     "description": "This simple, simple dish is super, super tasty. It’s just a few ingredients, but it’s a dish much loved by Koreans and a staple of our everyday lives. This version is simple, but you can dress it up with a bit of beef, chicken, pork, ham, or even spam. Many Koreans also like to put a fried egg on top, but my family prefers this simple version that I’m showing you here.",
     "rating": 8,
     "serving": 2,
+    "image": "/assets/recipesImages/kimchi_fried_rice.jpg",
     "ingredients": [
       "3 bowls steamed rice (3 cups)",
       "1 cup chopped kimchi (should be well-fermented and sour)",
@@ -316,7 +320,6 @@
       "Add sesame oil and remove from the heat.",
       "Garnish with sprinkled chopped green onion, roasted gim, and sesame seeds. Serve right away."
     ],
-    "image": "/assets/recipesImages/kimchi_fried_rice.jpg",
     "categories": ["Korean", "Comfort Food"]
   },
   {
@@ -324,6 +327,7 @@
     "description": "Buffalo chicken wings are a classic American dish that is perfect for parties, game days, or just a fun dinner. They are spicy, tangy, and delicious, and they are sure to be a hit with your friends and family.",
     "rating": 9,
     "serving": 3,
+    "image": "/assets/recipesImages/buffalo_wings.jpg",
     "ingredients": [
       "750g chicken wings",
       "1 cup Franks hot sauce",
@@ -334,15 +338,14 @@
       "1 tsp paprika"
     ],
     "steps": [
-      "Warmup hoven 200°C.",
+      "Warmup oven to 200°C.",
       "Cook wings during 30/45 minutes.",
       "Melt butter in a saucepan over medium heat.",
       "Add hot sauce, Worcestershire sauce, honey, garlic powder, and paprika to the saucepan.",
-      "Laissez mijoter pendant 5 minutes.",
+      "Simmer for 5 minutes.",
       "Remove the wings from the oven and toss them in the sauce.",
-      "Servez chaud."
+      "Serve hot."
     ],
-    "image": "/assets/recipesImages/buffalo_wings.jpg",
     "categories": ["American", "Chicken"]
   },
   {
@@ -350,21 +353,23 @@
     "description": "These sautéed curry shrimp are a quick and easy dish to prepare. They are flavorful and perfect for a weeknight meal.",
     "rating": 10,
     "serving": 4,
+    "image": "/assets/recipesImages/fried_shrimp_rice.jpeg",
     "ingredients": [
       "24 peeled shrimp",
       "1 clove of garlic",
       "3 tablespoons olive oil",
       "1.5 cups of raw rice",
       "salt and pepper",
-      [
-        "For the sauce",
-        "3 tablespoons olive oil",
-        "1 tablespoon soy sauce",
-        "1 tablespoon balsamic vinegar",
-        "1 teaspoon ground cumin",
-        "1 teaspoon curry powder",
-        "8 sprigs of cilantro for serving"
-      ]
+      {
+        "For the sauce": [
+          "3 tablespoons olive oil",
+          "1 tablespoon soy sauce",
+          "1 tablespoon balsamic vinegar",
+          "1 teaspoon ground cumin",
+          "1 teaspoon curry powder",
+          "8 sprigs of cilantro for serving"
+        ]
+      }
     ],
     "steps": [
       "For the marinade, peel the garlic clove (remove the germ if there is one) and crush it using a garlic press.",
@@ -377,7 +382,222 @@
       "Divide the rice among 4 bowls and top with the shrimp.",
       "Sprinkle with chopped cilantro and serve immediately with a side of sauce."
     ],
-    "image": "/assets/recipesImages/fried_shrimp_rice.jpeg",
     "categories": ["Seafood", "Healthy", "Quick Meal"]
+  },
+  {
+    "title": "Best Chocolate Chip Cookies",
+    "description": "These amazing, crispy on the outside and melted on the inside, moist and fragrant cookies will have you addicted. They're Chloe's favourite cookies she's ever made or tasted.",
+    "rating": "9",
+    "serving": "30 cookies",
+    "image": "/assets/recipesImages/chocolate_chip_cookies.jpg",
+    "ingredients": [
+      "304 Grams all-purpose flour (T55)",
+      "2 Grams baking soda",
+      "2 Grams salt",
+      "170 Grams unsalted butter, melted",
+      "180 Grams packed brown sugar",
+      "106 Grams white sugar",
+      "10 Grams vanilla extract or one pod of vanilla",
+      "1 whole egg",
+      "1 egg yolk",
+      "322 Grams chocolate, cut into pieces"
+    ],
+    "steps": [
+      "Preheat oven to 160°C.",
+      "Sieve the flour and mix in the baking soda and salt. Set aside.",
+      "Melt the butter, then add the brown sugar, white sugar, and vanilla. Mix well.",
+      "Add the egg and egg yolk to the butter mixture and mix thoroughly.",
+      "Gradually add the flour mixture to the wet ingredients and stir until well combined.",
+      "Fold in the chocolate pieces.",
+      "Chill the dough in the fridge for at least 20 minutes, up to 24 hours for better flavor.",
+      "Scoop 28 grams of dough per cookie and place on a non-stick tray.",
+      "Bake at 160°C for 15-17 minutes or at 200°C for 8.5-10 minutes.",
+      "Let the cookies cool on the tray for a few minutes before transferring to a wire rack."
+    ],
+    "categories": ["Dessert", "Comfort Food", "Baking"]
+  },
+  {
+    "title": "Sauce vert",
+    "description": "This incredibly versatile sauce made entirely from parsley is uplifting, appetising and super special. First tried from poulet braise in paris, this sauce is african and can be made from a few simple ingredients. It goes especially well with chicken and chips.",
+    "rating": "9",
+    "serving": "4 people",
+    "image": "/assets/recipesImages/sauce_vert.jpg",
+    "ingredients": [
+      "3 tablespoons of mayo",
+      "2 tablespoons of dijon mustard",
+      "1 big bunch of parsley",
+      "5-6 drops of maggi arome",
+      "1 lemon",
+      "1-3 cloves of garlic",
+      "1 teaspoon of chilli powder",
+      "2 tablespoons of sour cream/creme fraiche"
+    ],
+    "steps": [
+      "Destem your parsley and remove the outer skin of the garlic cloves.",
+      "Add all the ingredients into the blender.",
+      "Adjust any ingredients as needed and add salt and pepper to your taste.",
+      "Voila! Set in the fridge to eat when cooled, and serve with chips, chicken, fish, or barbeque."
+    ],
+    "categories": ["Sauce", "Comfort Food", "French"]
+  },
+  {
+    "title": "American Pulled Pork",
+    "description": "This pork falls apart with explosive taste which can compliment many dishes. With barbeque sauce, it's sure to make your day.",
+    "serving": "4 people",
+    "image": "/assets/recipesImages/american_pulled_pork.jpg",
+    "ingredients": [
+      "700g Boneless pork butt or pork shoulder roast",
+      "1 Onion",
+      "Pepper",
+      "Bay Leaves",
+      "Thyme",
+      "Garlic cloves",
+      "Smoked paprika",
+      "Paprika",
+      "Garlic powder",
+      "Black pepper",
+      "Cayenne pepper",
+      "Chili powder",
+      "Brown sugar",
+      "Salt",
+      "Ground cumin",
+      "Yellow mustard",
+      "1 1/2 cups ketchup",
+      "1/2 cup Dijon mustard",
+      "1/3 cup apple cider vinegar",
+      "1/4 cup packed dark brown sugar",
+      "2 Tbsp. Worcestershire sauce"
+    ],
+    "steps": [
+      "Make a paste with the spices: smoked paprika, paprika, garlic powder, black pepper, cayenne pepper, chili powder, brown sugar, salt, ground cumin, and yellow mustard.",
+      "Cut the pork into cubes to fit in a Dutch oven.",
+      "Rub the spice paste onto the pork cubes.",
+      "Sear the pork pieces for about 10 mins in the Dutch oven.",
+      "Brown the onion and peppers at the bottom of the Dutch oven, then leave them there.",
+      "Place the pork, bay leaves, and thyme in the Dutch oven.",
+      "Squeeze a lime on top of the pork.",
+      "Bring to a boil and then reduce to a simmer.",
+      "Cook in the oven at 180°C for 3 hours until the pork is tender and falls apart.",
+      "Pull the pork and remove.",
+      "Make the sauce from the leftover juice in the Dutch oven by combining ketchup, Dijon mustard, apple cider vinegar, dark brown sugar, and Worcestershire sauce."
+    ],
+    "categories": ["Main Dish", "Pork", "Comfort Food"]
+  },
+  {
+    "title": "English Beef Stew",
+    "description": "Wonderfully tender and tasty beef in a mesmerisingly warm stew, perfectly balanced meal that will make your guests very happy.",
+    "serving": "5 people",
+    "image": "/assets/recipesImages/english_beef_stew.jpg",
+    "ingredients": [
+      "0.6 kg chuck beef (beef for stewing), cut into 3.5 cm cubes",
+      "0.5 tsp salt",
+      "0.5 tsp pepper",
+      "1.5 tbsp olive oil",
+      "1 large onion, halved then cut into slices",
+      "2 garlic cloves, minced",
+      "1.5 carrots, cut into 2.5 cm / 1\" pieces on the diagonal",
+      "1 celery stalk, cut into 2.5 cm / 1\" pieces",
+      "25g flour",
+      "375 ml beef broth / stock, salt reduced",
+      "250 ml red wine (Cabernet Sauvignon, Burgundy, Merlot)",
+      "3 tsp Worcestershire Sauce",
+      "4 tbsp tomato paste",
+      "2 bay leaves, fresh or dried",
+      "3-4 sprigs thyme",
+      "parsley for garnish",
+      "200 g / 7 oz baby potatoes, halved",
+      "Mushrooms",
+      "More salt and pepper, to taste"
+    ],
+    "steps": [
+      "Salt the beef chunks.",
+      "Sear the beef on all sides, avoiding overcrowding in the pan.",
+      "In the same pan, fry the onions and celery in the beef drippings, adding a pinch of salt.",
+      "Fry the tomato paste for 3 minutes.",
+      "Add the flour, garlic, pepper, and a bit more salt.",
+      "Pour in the beef broth and red wine to deglaze the pan.",
+      "Add Worcestershire sauce, bay leaves, thyme, and additional spices.",
+      "Simmer in a heavy pot or Dutch oven on low heat for about 2 hours.",
+      "Add the potatoes, mushrooms, carrots, peas, or any other vegetables you like.",
+      "Continue simmering for another 30 minutes to 1 hour. After, add some parsley.",
+      "Serve the stew with mashed potatoes! Here’s the quick recipe for making this. Boil potatoes, peel, crush, add butter slowly while heating it, then add milk slowly, then add salt and pepper."
+    ],
+    "categories": ["English", "Beef", "Stew", "Comfort Food"]
+  },
+  {
+    "title": "Ramyun: Chashu and Ramen Eggs",
+    "description": "Are you ready to up your ramen game? Check out this recipe which teaches you how to make the most important ramen toppings: the pork and the eggs. The pork is beautifully spiced and the egg feels like a deluxe edition of ramen eggs which will elevate your ramen to new levels.",
+    "serving": "4 people",
+    "image": "/assets/recipesImages/ramyun_chashu_egg.jpg",
+    "ingredients": [
+      {
+        "chashu pork": [
+          "450g pork belly or pork shoulder",
+          "3 green onions",
+          "4 slices ginger",
+          "Some wine (substitute for mirin)",
+          "80 ml soy sauce",
+          "160 ml water",
+          "45 g sugar"
+        ]
+      },
+      {
+        "marinated ramen eggs": [
+          "0.33 cup water or stock",
+          "3.33 Tablespoons soy sauce",
+          "2.67 Tablespoons mirin",
+          "1.33 teaspoons dark soy sauce (optional for deeper color)",
+          "Ginger and garlic",
+          "8g sugar",
+          "5 eggs"
+        ]
+      }
+    ],
+    "steps": [
+      "Gather all the ingredients.",
+      "Heat a cast iron skillet or regular frying pan over high heat. When the pan is hot, add 0.5 Tbsp neutral oil. Sear the pork belly block fat-side down first, then flip over to sear the other side; this will take about 10 minutes.",
+      "While searing, prepare a heavy-bottomed pot (or regular pot) that will fit the chashu. To the pot, add long green onion, 4 slices ginger (unpeeled), 80 ml wine (or mirin substitute), 80 ml soy sauce, 160 ml water, and 45 g sugar.",
+      "Once the meat is seared, add it to the pot. Bring the liquid to a boil, skimming the scum and foam. Then, turn the heat to low/simmer.",
+      "Put an otoshibuta (drop lid) or aluminium foil on top to press the ingredients down and limit the evaporation. Simmer on low heat for 1 hour, turning the chashu every 15 minutes and keeping the otoshibuta on at all times.",
+      "After 1 hour, there should be about ½ inch of liquid left in the pot. Remove the otoshibuta and further reduce the sauce on low heat until it thickens and you can see the bottom of the pot when you draw a line through the sauce with a spatula.",
+      "To serve, slice the chashu into ¼-inch (6 mm) pieces. Optionally, sear the slices with a kitchen butane torch to enhance the flavor.",
+      "For the eggs, boil and simmer your eggs for 6 minutes.",
+      "Prepare ice bath to add your eggs into after they're finished boiling. Leave for 5-10 mins to cool.",
+      "In a ziplock bag, combine water or stock, soy sauce, mirin, dark soy sauce (if using), ginger, garlic, and sugar. For ramen eggs made without mirin: Substitute water or stock with a pinch of sugar and a few drops of vinegar.",
+      "Peel eggs carefully and add to your sauce.",
+      "Once cooled, marinate boiled eggs in the mixture for at least 4 hours, preferably overnight, for the best flavor."
+    ],
+    "categories": ["Japanese"]
+  },
+  {
+    "title": "Japchae",
+    "description": "Japchae, sweet potato starch noodles stir fried with vegetables and meat, is one of Korea’s best-loved dishes. You can't miss the chewy, sweet, and slightly slippery noodles with colorful stir-fried vegetables and mushrooms, its irresistible sesame flavor, healthy amount of garlic, and light, refreshing taste.",
+    "serving": "8 people",
+    "image": "/assets/recipesImages/japchae.jpg",
+    "ingredients": [
+      "210g sweet potato noodles",
+      "100g beef tenderloin or pork shoulder",
+      "1 bottle Japchae sauce",
+      "1 egg",
+      "2 cloves garlic",
+      "Sesame seeds",
+      "100g spinach",
+      "2/3 green onions",
+      "1 onion",
+      "Black pepper",
+      "Salt",
+      "Shiitake mushrooms or white mushrooms"
+    ],
+    "steps": [
+      "Marinate the beef and shiitake mushrooms in a bowl with 1 clove of minced garlic, 1 teaspoon sugar, ¼ teaspoon ground black pepper, 2 teaspoons soy sauce, and 1 teaspoon toasted sesame oil. Mix well and refrigerate.",
+      "Cook the egg into an omelette and slice thinly. Note: From now on, add salt to taste during the cooking of each ingredient.",
+      "Boil water, cook the spinach briefly, then rinse it in cold water. Squeeze out excess water and cut into pieces.",
+      "Cook the noodles for 8 minutes, stirring occasionally. Add some sauce to prevent sticking.",
+      "Sauté the onions and green onions until transparent, then add the mushrooms.",
+      "Add the carrots and, after a while, the red bell peppers. Continue cooking until tender.",
+      "Sauté the marinated beef until fully cooked.",
+      "Combine all ingredients, add more sauce and sesame seeds, and stir-fry everything together until heated through."
+    ],
+    "categories": ["Korean", "Noodles"]
   }
 ]

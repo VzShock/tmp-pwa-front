@@ -379,5 +379,221 @@
     ],
     "image": "/assets/recipesImages/fried_shrimp_rice.jpeg",
     "categories": ["Seafood", "Healthy", "Quick Meal"]
+  },
+  {
+    "title": "Les Meilleurs Cookies aux Pépites de Chocolat",
+    "description": "Ces cookies incroyables, croustillants à l'extérieur et fondants à l'intérieur, sont moelleux et parfumés. Ce sont les cookies préférés de Chloe qu'elle ait jamais faits ou goûtés.",
+    "note": "9",
+    "portions": "30 cookies",
+    "image": "/assets/recipesImages/chocolate_chip_cookies.jpg",
+    "ingrédients": [
+      "304 grammes de farine tout usage (T55)",
+      "2 grammes de bicarbonate de soude",
+      "2 grammes de sel",
+      "170 grammes de beurre non salé, fondu",
+      "180 grammes de sucre brun tassé",
+      "106 grammes de sucre blanc",
+      "10 grammes d'extrait de vanille ou une gousse de vanille",
+      "1 œuf entier",
+      "1 jaune d'œuf",
+      "322 grammes de chocolat, coupé en morceaux"
+    ],
+    "étapes": [
+      "Préchauffez le four à 160°C.",
+      "Tamiser la farine et mélanger avec le bicarbonate de soude et le sel. Mettre de côté.",
+      "Faire fondre le beurre, puis ajouter le sucre brun, le sucre blanc, et la vanille. Bien mélanger.",
+      "Ajouter l'œuf et le jaune d'œuf au mélange de beurre et bien mélanger.",
+      "Ajouter progressivement le mélange de farine aux ingrédients liquides et mélanger jusqu'à ce que le tout soit bien incorporé.",
+      "Incorporer les morceaux de chocolat.",
+      "Laisser reposer la pâte au réfrigérateur pendant au moins 20 minutes, jusqu'à 24 heures pour un meilleur goût.",
+      "Former des boules de pâte de 28 grammes par cookie et les déposer sur une plaque antiadhésive.",
+      "Cuire à 160°C pendant 15-17 minutes ou à 200°C pendant 8,5-10 minutes.",
+      "Laisser refroidir les cookies sur la plaque quelques minutes avant de les transférer sur une grille."
+    ],
+    "categories": ["Dessert", "Confort Food", "Pâtisserie"]
+  },
+  {
+    "title": "Sauce verte",
+    "description": "Cette sauce incroyablement polyvalente, entièrement faite de persil, est vivifiante, appétissante et très spéciale. Essayée pour la première fois avec du poulet braisé à Paris, cette sauce est africaine et peut être préparée avec quelques ingrédients simples. Elle se marie particulièrement bien avec du poulet et des frites.",
+    "note": "9",
+    "portions": "4 personnes",
+    "image": "/assets/recipesImages/sauce_vert.jpg",
+    "ingrédients": [
+      "3 cuillères à soupe de mayonnaise",
+      "2 cuillères à soupe de moutarde de Dijon",
+      "1 grosse botte de persil",
+      "5-6 gouttes d'arôme Maggi",
+      "1 citron",
+      "1-3 gousses d'ail",
+      "1 cuillère à café de poudre de chili",
+      "2 cuillères à soupe de crème fraîche"
+    ],
+    "étapes": [
+      "Équeuter le persil et retirer la peau extérieure des gousses d'ail.",
+      "Ajouter tous les ingrédients dans le mixeur.",
+      "Ajuster les ingrédients au besoin et ajouter du sel et du poivre selon votre goût.",
+      "Voila! Mettre au réfrigérateur pour manger une fois refroidie, et servir avec des frites, du poulet, du poisson, ou un barbecue."
+    ],
+    "categories": ["Sauce", "Confort Food", "Français"]
+  },
+  {
+    "title": "Pulled Pork Américain",
+    "description": "Ce porc effiloché avec une explosion de saveurs peut accompagner de nombreux plats. Avec une sauce barbecue, il est sûr de faire votre journée.",
+    "portions": "4 personnes",
+    "image": "/assets/recipesImages/american_pulled_pork.jpg",
+    "ingrédients": [
+      "700g d'épaule de porc désossée ou de rôti d'épaule de porc",
+      "1 oignon",
+      "Poivre",
+      "Feuilles de laurier",
+      "Thym",
+      "Gousses d'ail",
+      "Paprika fumé",
+      "Paprika",
+      "Poudre d'ail",
+      "Poivre noir",
+      "Piment de Cayenne",
+      "Poudre de chili",
+      "Sucre brun",
+      "Sel",
+      "Cumin moulu",
+      "Moutarde jaune",
+      "1 1/2 tasse de ketchup",
+      "1/2 tasse de moutarde de Dijon",
+      "1/3 tasse de vinaigre de cidre de pomme",
+      "1/4 tasse de sucre brun foncé tassé",
+      "2 cuillères à soupe de sauce Worcestershire"
+    ],
+    "étapes": [
+      "Faire une pâte avec les épices : paprika fumé, paprika, poudre d'ail, poivre noir, piment de Cayenne, poudre de chili, sucre brun, sel, cumin moulu, et moutarde jaune.",
+      "Couper le porc en cubes pour qu'il tienne dans une cocotte.",
+      "Frotter la pâte d'épices sur les cubes de porc.",
+      "Saisir les morceaux de porc pendant environ 10 minutes dans la cocotte.",
+      "Faire dorer l'oignon et les poivrons au fond de la cocotte, puis les laisser dedans.",
+      "Placer le porc, les feuilles de laurier, et le thym dans la cocotte.",
+      "Presser un citron vert sur le porc.",
+      "Porter à ébullition puis réduire à feu doux.",
+      "Cuire au four à 180°C pendant 3 heures jusqu'à ce que le porc soit tendre et se défasse.",
+      "Effilocher le porc et retirer.",
+      "Préparer la sauce à partir du jus restant dans la cocotte en combinant ketchup, moutarde de Dijon, vinaigre de cidre de pomme, sucre brun foncé, et sauce Worcestershire."
+    ],
+    "categories": ["Plat Principal", "Porc", "Confort Food"]
+  },
+  {
+    "title": "Ragoût de Bœuf Anglais",
+    "description": "Un bœuf merveilleusement tendre et savoureux dans un ragoût chaud et réconfortant, un repas parfaitement équilibré qui rendra vos invités très heureux.",
+    "portions": "5 personnes",
+    "image": "/assets/recipesImages/english_beef_stew.jpg",
+    "ingrédients": [
+      "0.6 kg de bœuf pour ragoût, coupé en cubes de 3,5 cm",
+      "0.5 c. à café de sel",
+      "0.5 c. à café de poivre",
+      "1.5 c. à soupe d'huile d'olive",
+      "1 gros oignon, coupé en tranches",
+      "2 gousses d'ail, hachées",
+      "1.5 carottes, coupées en morceaux de 2,5 cm",
+      "1 branche de céleri, coupée en morceaux de 2,5 cm",
+      "25g de farine",
+      "375 ml de bouillon de bœuf, réduit en sel",
+      "250 ml de vin rouge (Cabernet Sauvignon, Bourgogne, Merlot)",
+      "3 c. à café de sauce Worcestershire",
+      "4 c. à soupe de concentré de tomate",
+      "2 feuilles de laurier, fraîches ou sèches",
+      "3-4 brins de thym",
+      "persil pour garnir",
+      "200 g de pommes de terre, coupées en deux",
+      "Champignons",
+      "Plus de sel et de poivre, au goût"
+    ],
+    "étapes": [
+      "Saler les morceaux de bœuf.",
+      "Saisir le bœuf de tous les côtés, en évitant de surcharger la poêle.",
+      "Dans la même poêle, faire revenir les oignons et le céleri dans les sucs de cuisson du bœuf, en ajoutant une pincée de sel.",
+      "Faire revenir le concentré de tomate pendant 3 minutes.",
+      "Ajouter la farine, l'ail, le poivre, et un peu plus de sel.",
+      "Verser le bouillon de bœuf et le vin rouge pour déglacer la poêle.",
+      "Ajouter la sauce Worcestershire, les feuilles de laurier, le thym, et d'autres épices.",
+      "Laisser mijoter dans une cocotte ou une casserole à feu doux pendant environ 2 heures.",
+      "Ajouter les pommes de terre, les champignons, les carottes, les pois ou tout autre légume de votre choix.",
+      "Continuer à mijoter pendant encore 30 minutes à 1 heure. Ajouter un peu de persil.",
+      "Servir le ragoût avec de la purée de pommes de terre! Voici la recette rapide pour la préparer. Faire bouillir les pommes de terre, les peler, les écraser, ajouter du beurre en chauffant lentement, puis ajouter du lait lentement, puis saler et poivrer."
+    ],
+    "categories": ["Anglais", "Bœuf", "Ragoût", "Confort Food"]
+  },
+  {
+    "title": "Ramyun: Chashu et Œufs Ramen",
+    "description": "Êtes-vous prêt à améliorer votre ramen? Découvrez cette recette qui vous apprend à préparer les garnitures les plus importantes pour les ramen: le porc et les œufs. Le porc est merveilleusement épicé et l'œuf ressemble à une version de luxe des œufs ramen qui élèvera votre ramen à un niveau supérieur.",
+    "portions": "4 personnes",
+    "image": "/assets/recipesImages/ramyun_chashu_egg.jpg",
+    "ingrédients": [
+      {
+        "porc chashu": [
+          "450g de poitrine de porc ou d'épaule de porc",
+          "3 oignons verts",
+          "4 tranches de gingembre",
+          "Un peu de vin (substitut pour le mirin)",
+          "80 ml de sauce soja",
+          "160 ml d'eau",
+          "45 g de sucre"
+        ]
+      },
+      {
+        "œufs ramen marinés": [
+          "0,33 tasse d'eau ou de bouillon",
+          "3,33 cuillères à soupe de sauce soja",
+          "2,67 cuillères à soupe de mirin",
+          "1,33 cuillère à café de sauce soja foncée (facultatif pour une couleur plus foncée)",
+          "Gingembre et ail",
+          "8g de sucre",
+          "5 œufs"
+        ]
+      }
+    ],
+    "étapes": [
+      "Rassembler tous les ingrédients.",
+      "Faire chauffer une poêle en fonte ou une poêle ordinaire à feu vif. Lorsque la poêle est chaude, ajouter 0,5 cuillère à soupe d'huile neutre. Saisir le bloc de poitrine de porc côté gras vers le bas d'abord, puis retourner pour saisir l'autre côté; cela prendra environ 10 minutes.",
+      "Pendant que la viande est saisie, préparer une casserole lourde (ou une casserole ordinaire) qui conviendra au chashu. Ajouter à la casserole l'oignon vert, 4 tranches de gingembre (non pelées), 80 ml de vin (ou substitut de mirin), 80 ml de sauce soja, 160 ml d'eau, et 45 g de sucre.",
+      "Une fois la viande saisie, l'ajouter à la casserole. Porter le liquide à ébullition, écumer l'écume et les impuretés. Puis, baisser le feu à faible/mijoter.",
+      "Mettre un otoshibuta (couvercle de pression) ou du papier aluminium sur le dessus pour presser les ingrédients vers le bas et limiter l'évaporation. Laisser mijoter à feu doux pendant 1 heure, en retournant le chashu tous les 15 minutes et en gardant l'otoshibuta en place à tout moment.",
+      "Après 1 heure, il devrait rester environ ½ pouce de liquide dans la casserole. Retirer l'otoshibuta et réduire encore la sauce à feu doux jusqu'à ce qu'elle épaississe et que vous puissiez voir le fond de la casserole lorsque vous tracez une ligne à travers la sauce avec une spatule.",
+      "Pour servir, trancher le chashu en morceaux de ¼ de pouce (6 mm). En option, saisir les tranches avec un chalumeau de cuisine pour rehausser la saveur.",
+      "Pour les œufs, les faire bouillir et mijoter pendant 6 minutes.",
+      "Préparer un bain de glace pour y plonger les œufs après leur ébullition. Laisser refroidir pendant 5-10 minutes.",
+      "Dans un sac ziplock, combiner l'eau ou le bouillon, la sauce soja, le mirin, la sauce soja foncée (si utilisée), le gingembre, l'ail, et le sucre. Pour les œufs ramen sans mirin: substituer l'eau ou le bouillon avec une pincée de sucre et quelques gouttes de vinaigre.",
+      "Peler les œufs délicatement et les ajouter à la sauce.",
+      "Une fois refroidis, mariner les œufs bouillis dans le mélange pendant au moins 4 heures, de préférence toute la nuit, pour obtenir la meilleure saveur."
+    ],
+    "categories": ["Japonais"]
+  },
+  {
+    "title": "Japchae",
+    "description": "Le Japchae, des nouilles à base de fécule de patate douce sautées avec des légumes et de la viande, est l'un des plats les plus appréciés de Corée. Vous ne pouvez pas manquer les nouilles moelleuses, sucrées et légèrement glissantes avec des légumes colorés sautés et des champignons, son irrésistible saveur de sésame, une quantité saine d'ail, et un goût léger et rafraîchissant.",
+    "portions": "8 personnes",
+    "image": "/assets/recipesImages/japchae.jpg",
+    "ingrédients": [
+      "210g de nouilles de patate douce",
+      "100g de filet de bœuf ou d'épaule de porc",
+      "1 bouteille de sauce Japchae",
+      "1 œuf",
+      "2 gousses d'ail",
+      "Graines de sésame",
+      "100g d'épinards",
+      "2/3 oignons verts",
+      "1 oignon",
+      "Poivre noir",
+      "Sel",
+      "Champignons shiitake ou champignons blancs"
+    ],
+    "étapes": [
+      "Faire mariner le bœuf et les champignons shiitake dans un bol avec 1 gousse d'ail hachée, 1 cuillère à café de sucre, ¼ de cuillère à café de poivre noir moulu, 2 cuillères à café de sauce soja, et 1 cuillère à café d'huile de sésame grillée. Bien mélanger et réfrigérer.",
+      "Cuire l'œuf en une omelette et le couper en fines lamelles. Note: À partir de maintenant, ajouter du sel au goût pendant la cuisson de chaque ingrédient.",
+      "Faire bouillir de l'eau, cuire les épinards brièvement, puis les rincer à l'eau froide. Presser pour enlever l'excès d'eau et couper en morceaux.",
+      "Cuire les nouilles pendant 8 minutes, en remuant de temps en temps. Ajouter un peu de sauce pour éviter qu'elles ne collent.",
+      "Faire revenir les oignons et les oignons verts jusqu'à ce qu'ils soient translucides, puis ajouter les champignons.",
+      "Ajouter les carottes et, après un moment, les poivrons rouges. Continuer à cuire jusqu'à ce qu'ils soient tendres.",
+      "Faire sauter le bœuf mariné jusqu'à ce qu'il soit bien cuit.",
+      "Combiner tous les ingrédients, ajouter plus de sauce et des graines de sésame, et faire sauter le tout jusqu'à ce que ce soit bien chauffé."
+    ],
+    "categories": ["Coréen", "Nouilles"]
   }
 ]

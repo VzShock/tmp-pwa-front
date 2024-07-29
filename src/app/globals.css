@@ -50,7 +50,7 @@ body {
     rgba(231, 116, 149, 1) 98%,
     rgba(74, 191, 107, 1) 99%
   ); */
-  background-image: url(/assets/backgroundimage.png);
+  background-image: url(/assets/backgroundimage_blur.png);
 
   background-repeat: no-repeat;
   background-attachment: fixed;

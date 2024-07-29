@@ -1,6 +1,5 @@
 "use client";
 import styles from "./recipecard.module.css";
-import { useState } from "react";
 
 type RecipeCardProps = {
   title: string;
@@ -48,7 +47,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
       <div className="px-6 py-4 flex flex-col justify-between">
         <div>
           <div className="font-bold text-xl mb-2">{title}</div>
-          <div className="flex my-1">{renderRating()}</div>
+          {/*<div className="flex my-1">{renderRating()}</div>*/}
         </div>
         <p className="text-gray-700 text-base overflow-ellipsis overflow-hidden">
           {description.length > 120
