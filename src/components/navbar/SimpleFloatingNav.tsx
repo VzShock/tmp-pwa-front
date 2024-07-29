@@ -5,6 +5,7 @@ import styles from "./navbar.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import PostRecipeModal from "./PostRecipeModal";
+import StaggeredDropDown from "@/components/DropDown/StaggeredDropDown";
 
 interface NavLinkProps {
   searchTerm: string;
@@ -24,62 +25,63 @@ export const SimpleFloatingNav = ({
 
   return (
     <div>
-      <nav
-        className={`${styles.navbar_container} z-30 fixed left-[50%] top-8 flex  -translate-x-[50%] items-center  rounded-lg p-1 text-sm text-neutral-500`}
-      >
-        <div
-          style={{ cursor: "pointer" }}
-          onClick={() => {
-            setSearchTerm("");
-          }}
+        <nav
+            className={`${styles.navbar_container} z-30 fixed left-[50%] top-8 flex  -translate-x-[50%] items-center  rounded-lg p-1 text-sm text-neutral-500`}
         >
-          <Logo />
-        </div>
+            <div
+                style={{cursor: "pointer"}}
+                onClick={() => {
+                    setSearchTerm("");
+                }}
+            >
+                <Logo/>
+            </div>
 
-        <div className="flex items-center gap-6">
-          {/* add an input for searching */}
-          <input
-            className="w-2/4 sm:w-100 form-control"
-            type="text"
-            placeholder="Search ..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            style={{
-              width: "100%", // Adjust this value as needed
-              margin: "0 auto", // Center the input
-            }}
-          ></input>
+            <div className="flex items-center gap-6">
+                {/* add an input for searching */}
+                <input
+                    className="w-2/4 sm:w-100 form-control"
+                    type="text"
+                    placeholder="Search ..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    style={{
+                        width: "100%", // Adjust this value as needed
+                        margin: "0 auto", // Center the input
+                    }}
+                ></input>
 
-          {/* <NavLink href="/">Home</NavLink>
+                {/* <NavLink href="/">Home</NavLink>
           <NavLink href="/account">Account</NavLink>
           <MySaved isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-          {/* <NavLink href="/login">Disconnect</NavLink> */}
-        </div>
+                {/* <NavLink href="/login">Disconnect</NavLink> */}
+            </div>
 
-        <div className="flex items-center gap-6 ml-6">
-          <button
-            onClick={() =>
-              setLanguage((language) => (language === "en" ? "fr" : "en"))
-            }
-            // add style on hover scale 2
-            className="hover:scale-105 transition-transform"
-          >
-            <img
-              src={language === "en" ? "/assets/fr.png" : "/assets/en.png"}
-              alt={language}
-              className="w-12 h-12"
-            />
-          </button>
-        </div>
-      </nav>
-      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
+            <div className="flex items-center gap-6 lg:ml-6">
+                <button
+                    onClick={() =>
+                        setLanguage((language) => (language === "en" ? "fr" : "en"))
+                    }
+                    // add style on hover scale 2
+                    className="hover:scale-105 transition-transform"
+                >
+                    <img
+                        src={language === "en" ? "/assets/fr.png" : "/assets/en.png"}
+                        alt={language}
+                        className="w-12 h-12"
+                    />
+                </button>
+
+            </div>
+        </nav>
+        {/*<SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />*/}
     </div>
   );
 };
 
 const Logo = () => {
-  return (
-    <div className="flex flex-row items-center">
+    return (
+        <div className="flex flex-row items-center">
       <div className="ml-2 text-white text-xl">This is our Food.</div>
 
       <svg
