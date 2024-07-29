@@ -186,8 +186,8 @@ const RecipeDetailsModal: React.FC<RecipeDetailsModalProps> = ({
           />
         </div>
         <div className="flex flex-row items-center justify-between mb-6">
-          <h5 className="font-semibold">{title}</h5>
-          <div className={`${styles.ratingContainer}`}>{renderRating2()}</div>
+          <h5 className="font-semibold m-2">{title}</h5>
+          {/*<div className={`${styles.ratingContainer}`}>{renderRating2()}</div>*/}
         </div>
         <p className={`${styles.modalDescription}`}>{description}</p>
         <RecipeSteps steps={steps || []} />

@@ -384,9 +384,9 @@
     "title": "Les Meilleurs Cookies aux Pépites de Chocolat",
     "description": "Ces cookies incroyables, croustillants à l'extérieur et fondants à l'intérieur, sont moelleux et parfumés. Ce sont les cookies préférés de Chloe qu'elle ait jamais faits ou goûtés.",
     "note": "9",
-    "portions": "30 cookies",
+    "serving": "30 cookies",
     "image": "/assets/recipesImages/chocolate_chip_cookies.jpg",
-    "ingrédients": [
+    "ingredients": [
       "304 grammes de farine tout usage (T55)",
       "2 grammes de bicarbonate de soude",
       "2 grammes de sel",
@@ -398,7 +398,7 @@
       "1 jaune d'œuf",
       "322 grammes de chocolat, coupé en morceaux"
     ],
-    "étapes": [
+    "steps": [
       "Préchauffez le four à 160°C.",
       "Tamiser la farine et mélanger avec le bicarbonate de soude et le sel. Mettre de côté.",
       "Faire fondre le beurre, puis ajouter le sucre brun, le sucre blanc, et la vanille. Bien mélanger.",
@@ -416,9 +416,9 @@
     "title": "Sauce verte",
     "description": "Cette sauce incroyablement polyvalente, entièrement faite de persil, est vivifiante, appétissante et très spéciale. Essayée pour la première fois avec du poulet braisé à Paris, cette sauce est africaine et peut être préparée avec quelques ingrédients simples. Elle se marie particulièrement bien avec du poulet et des frites.",
     "note": "9",
-    "portions": "4 personnes",
+    "serving": "4 personnes",
     "image": "/assets/recipesImages/sauce_vert.jpg",
-    "ingrédients": [
+    "ingredients": [
       "3 cuillères à soupe de mayonnaise",
       "2 cuillères à soupe de moutarde de Dijon",
       "1 grosse botte de persil",
@@ -428,7 +428,7 @@
       "1 cuillère à café de poudre de chili",
       "2 cuillères à soupe de crème fraîche"
     ],
-    "étapes": [
+    "steps": [
       "Équeuter le persil et retirer la peau extérieure des gousses d'ail.",
       "Ajouter tous les ingrédients dans le mixeur.",
       "Ajuster les ingrédients au besoin et ajouter du sel et du poivre selon votre goût.",
@@ -439,9 +439,9 @@
   {
     "title": "Pulled Pork Américain",
     "description": "Ce porc effiloché avec une explosion de saveurs peut accompagner de nombreux plats. Avec une sauce barbecue, il est sûr de faire votre journée.",
-    "portions": "4 personnes",
+    "serving": "4 personnes",
     "image": "/assets/recipesImages/american_pulled_pork.jpg",
-    "ingrédients": [
+    "ingredients": [
       "700g d'épaule de porc désossée ou de rôti d'épaule de porc",
       "1 oignon",
       "Poivre",
@@ -464,7 +464,7 @@
       "1/4 tasse de sucre brun foncé tassé",
       "2 cuillères à soupe de sauce Worcestershire"
     ],
-    "étapes": [
+    "steps": [
       "Faire une pâte avec les épices : paprika fumé, paprika, poudre d'ail, poivre noir, piment de Cayenne, poudre de chili, sucre brun, sel, cumin moulu, et moutarde jaune.",
       "Couper le porc en cubes pour qu'il tienne dans une cocotte.",
       "Frotter la pâte d'épices sur les cubes de porc.",
@@ -482,9 +482,9 @@
   {
     "title": "Ragoût de Bœuf Anglais",
     "description": "Un bœuf merveilleusement tendre et savoureux dans un ragoût chaud et réconfortant, un repas parfaitement équilibré qui rendra vos invités très heureux.",
-    "portions": "5 personnes",
+    "serving": "5 personnes",
     "image": "/assets/recipesImages/english_beef_stew.jpg",
-    "ingrédients": [
+    "ingredients": [
       "0.6 kg de bœuf pour ragoût, coupé en cubes de 3,5 cm",
       "0.5 c. à café de sel",
       "0.5 c. à café de poivre",
@@ -505,7 +505,7 @@
       "Champignons",
       "Plus de sel et de poivre, au goût"
     ],
-    "étapes": [
+    "steps": [
       "Saler les morceaux de bœuf.",
       "Saisir le bœuf de tous les côtés, en évitant de surcharger la poêle.",
       "Dans la même poêle, faire revenir les oignons et le céleri dans les sucs de cuisson du bœuf, en ajoutant une pincée de sel.",
@@ -523,9 +523,9 @@
   {
     "title": "Ramyun: Chashu et Œufs Ramen",
     "description": "Êtes-vous prêt à améliorer votre ramen? Découvrez cette recette qui vous apprend à préparer les garnitures les plus importantes pour les ramen: le porc et les œufs. Le porc est merveilleusement épicé et l'œuf ressemble à une version de luxe des œufs ramen qui élèvera votre ramen à un niveau supérieur.",
-    "portions": "4 personnes",
+    "serving": "4 personnes",
     "image": "/assets/recipesImages/ramyun_chashu_egg.jpg",
-    "ingrédients": [
+    "ingredients": [
       {
         "porc chashu": [
           "450g de poitrine de porc ou d'épaule de porc",
@@ -549,7 +549,7 @@
         ]
       }
     ],
-    "étapes": [
+    "steps": [
       "Rassembler tous les ingrédients.",
       "Faire chauffer une poêle en fonte ou une poêle ordinaire à feu vif. Lorsque la poêle est chaude, ajouter 0,5 cuillère à soupe d'huile neutre. Saisir le bloc de poitrine de porc côté gras vers le bas d'abord, puis retourner pour saisir l'autre côté; cela prendra environ 10 minutes.",
       "Pendant que la viande est saisie, préparer une casserole lourde (ou une casserole ordinaire) qui conviendra au chashu. Ajouter à la casserole l'oignon vert, 4 tranches de gingembre (non pelées), 80 ml de vin (ou substitut de mirin), 80 ml de sauce soja, 160 ml d'eau, et 45 g de sucre.",
@@ -568,9 +568,9 @@
   {
     "title": "Japchae",
     "description": "Le Japchae, des nouilles à base de fécule de patate douce sautées avec des légumes et de la viande, est l'un des plats les plus appréciés de Corée. Vous ne pouvez pas manquer les nouilles moelleuses, sucrées et légèrement glissantes avec des légumes colorés sautés et des champignons, son irrésistible saveur de sésame, une quantité saine d'ail, et un goût léger et rafraîchissant.",
-    "portions": "8 personnes",
+    "serving": "8 personnes",
     "image": "/assets/recipesImages/japchae.jpg",
-    "ingrédients": [
+    "ingredients": [
       "210g de nouilles de patate douce",
       "100g de filet de bœuf ou d'épaule de porc",
       "1 bouteille de sauce Japchae",
@@ -584,7 +584,7 @@
       "Sel",
       "Champignons shiitake ou champignons blancs"
     ],
-    "étapes": [
+    "steps": [
       "Faire mariner le bœuf et les champignons shiitake dans un bol avec 1 gousse d'ail hachée, 1 cuillère à café de sucre, ¼ de cuillère à café de poivre noir moulu, 2 cuillères à café de sauce soja, et 1 cuillère à café d'huile de sésame grillée. Bien mélanger et réfrigérer.",
       "Cuire l'œuf en une omelette et le couper en fines lamelles. Note: À partir de maintenant, ajouter du sel au goût pendant la cuisson de chaque ingrédient.",
       "Faire bouillir de l'eau, cuire les épinards brièvement, puis les rincer à l'eau froide. Presser pour enlever l'excès d'eau et couper en morceaux.",
