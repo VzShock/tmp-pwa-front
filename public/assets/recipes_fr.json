@@ -410,7 +410,7 @@
       "Cuire à 160°C pendant 15-17 minutes ou à 200°C pendant 8,5-10 minutes.",
       "Laisser refroidir les cookies sur la plaque quelques minutes avant de les transférer sur une grille."
     ],
-    "categories": ["Dessert", "Confort Food", "Pâtisserie"]
+    "categories": ["Dessert", "Comfort Food", "Baking"]
   },
   {
     "title": "Sauce verte",
@@ -434,7 +434,7 @@
       "Ajuster les ingrédients au besoin et ajouter du sel et du poivre selon votre goût.",
       "Voila! Mettre au réfrigérateur pour manger une fois refroidie, et servir avec des frites, du poulet, du poisson, ou un barbecue."
     ],
-    "categories": ["Sauce", "Confort Food", "Français"]
+    "categories": ["Sauce", "Comfort Food", "French"]
   },
   {
     "title": "Pulled Pork Américain",
@@ -477,7 +477,7 @@
       "Effilocher le porc et retirer.",
       "Préparer la sauce à partir du jus restant dans la cocotte en combinant ketchup, moutarde de Dijon, vinaigre de cidre de pomme, sucre brun foncé, et sauce Worcestershire."
     ],
-    "categories": ["Plat Principal", "Porc", "Confort Food"]
+    "categories": ["Main Dish", "Pork", "Comfort Food"]
   },
   {
     "title": "Ragoût de Bœuf Anglais",
@@ -518,7 +518,7 @@
       "Continuer à mijoter pendant encore 30 minutes à 1 heure. Ajouter un peu de persil.",
       "Servir le ragoût avec de la purée de pommes de terre! Voici la recette rapide pour la préparer. Faire bouillir les pommes de terre, les peler, les écraser, ajouter du beurre en chauffant lentement, puis ajouter du lait lentement, puis saler et poivrer."
     ],
-    "categories": ["Anglais", "Bœuf", "Ragoût", "Confort Food"]
+    "categories": ["English", "Beef", "Stew", "Comfort Food"]
   },
   {
     "title": "Ramyun: Chashu et Œufs Ramen",
@@ -563,7 +563,7 @@
       "Peler les œufs délicatement et les ajouter à la sauce.",
       "Une fois refroidis, mariner les œufs bouillis dans le mélange pendant au moins 4 heures, de préférence toute la nuit, pour obtenir la meilleure saveur."
     ],
-    "categories": ["Japonais"]
+    "categories": ["Japanese"]
   },
   {
     "title": "Japchae",
@@ -594,6 +594,6 @@
       "Faire sauter le bœuf mariné jusqu'à ce qu'il soit bien cuit.",
       "Combiner tous les ingrédients, ajouter plus de sauce et des graines de sésame, et faire sauter le tout jusqu'à ce que ce soit bien chauffé."
     ],
-    "categories": ["Coréen", "Nouilles"]
+    "categories": ["Korean", "Noodles"]
   }
 ]
