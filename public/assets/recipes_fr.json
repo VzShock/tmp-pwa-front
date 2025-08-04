@@ -27,7 +27,14 @@
       "Rincez le sel, puis pressez pour enlever l'eau",
       "Ajoutez la sauce"
     ],
-    "categories": ["Asian", "Salad", "Healthy", "Vegetarian"]
+    "categories": [
+      "Asian",
+      "Salad",
+      "Healthy",
+      "Vegetarian"
+    ],
+    "id": "1754272681762nk4755byz",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Salade de concombre à la coréenne",
@@ -51,7 +58,14 @@
       "Égouttez et pressez pour enlever l'excès d'eau.",
       "Ajoutez la sauce, et bon appétit !"
     ],
-    "categories": ["Korean", "Salad", "Spicy", "Vegetarian"]
+    "categories": [
+      "Korean",
+      "Salad",
+      "Spicy",
+      "Vegetarian"
+    ],
+    "id": "1754272681762ap6j1m7rc",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Poulet collant à la coréenne",
@@ -75,7 +89,13 @@
       "Garnissez de graines de sésame et d'oignons verts."
     ],
     "image": "/assets/recipesImages/korean_sticky_chicken.jpg",
-    "categories": ["Korean", "Chicken", "Spicy"]
+    "categories": [
+      "Korean",
+      "Chicken",
+      "Spicy"
+    ],
+    "id": "175427268176258on60miw",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Boeuf Bourguignon",
@@ -110,7 +130,13 @@
       "Préparez les champignons à mettre dessus. Et voilà !"
     ],
     "image": "/assets/recipesImages/boeuf_bourguignon.jpg",
-    "categories": ["French", "Beef", "Stew"]
+    "categories": [
+      "French",
+      "Beef",
+      "Stew"
+    ],
+    "id": "1754272681762rlc0pwvw5",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Kimchi Jigae",
@@ -150,7 +176,14 @@
       "Faites bouillir pendant 2 min."
     ],
     "image": "/assets/recipesImages/kimchi_jigae.jpg",
-    "categories": ["Korean", "Soup", "Spicy", "Comfort Food"]
+    "categories": [
+      "Korean",
+      "Soup",
+      "Spicy",
+      "Comfort Food"
+    ],
+    "id": "1754272681762xznjv2qb4",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Soupe de nouilles au poulet",
@@ -176,7 +209,13 @@
       "Retirez la carcasse et ajoutez les épices, puis remettez le poulet et les nouilles. Voilà !"
     ],
     "image": "/assets/recipesImages/chicken_noodle_soup.jpg",
-    "categories": ["Soup", "Chicken", "Comfort Food"]
+    "categories": [
+      "Soup",
+      "Chicken",
+      "Comfort Food"
+    ],
+    "id": "17542726817626tigvlxjl",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Curry Rouge Thaï",
@@ -217,7 +256,12 @@
       "Servez chaud avec du riz ou des nouilles. Pour améliorer : Ajoutez du citron vert"
     ],
     "image": "/assets/recipesImages/red_thai_curry.jpg",
-    "categories": ["Thai", "Spicy"]
+    "categories": [
+      "Thai",
+      "Spicy"
+    ],
+    "id": "1754272681762fyfe7114z",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Kimbap",
@@ -250,7 +294,13 @@
       "Bon appétit !"
     ],
     "image": "/assets/recipesImages/kimbap.jpg",
-    "categories": ["Korean", "Sushi", "Seafood"]
+    "categories": [
+      "Korean",
+      "Sushi",
+      "Seafood"
+    ],
+    "id": "1754272681762erfhftal0",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Salade de bœuf thaïlandaise ultime",
@@ -290,7 +340,13 @@
       "Servez avec du riz en option."
     ],
     "image": "/assets/recipesImages/thai_beef_salad.jpeg",
-    "categories": ["Thai", "Beef", "Salad"]
+    "categories": [
+      "Thai",
+      "Beef",
+      "Salad"
+    ],
+    "id": "1754272681762y8rl5hhsr",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Riz frit au Kimchi (Kimchi-bokkeumbap)",
@@ -317,7 +373,12 @@
       "Garnissez avec l'oignon vert haché, le gim grillé et les graines de sésame. Servez immédiatement."
     ],
     "image": "/assets/recipesImages/kimchi_fried_rice.jpg",
-    "categories": ["Korean", "Comfort Food"]
+    "categories": [
+      "Korean",
+      "Comfort Food"
+    ],
+    "id": "1754272681762zlwdo2o82",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Ailes de poulet Buffalo",
@@ -343,7 +404,12 @@
       "Servez chaud."
     ],
     "image": "/assets/recipesImages/buffalo_wings.jpg",
-    "categories": ["American", "Chicken"]
+    "categories": [
+      "American",
+      "Chicken"
+    ],
+    "id": "1754272681762kxgm9ytot",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Crevettes sautées au curry",
@@ -378,7 +444,13 @@
       "Parsemez le tout de coriandre ciselée et servez illico presto accompagné d'un ramequin de sauce."
     ],
     "image": "/assets/recipesImages/fried_shrimp_rice.jpeg",
-    "categories": ["Seafood", "Healthy", "Quick Meal"]
+    "categories": [
+      "Seafood",
+      "Healthy",
+      "Quick Meal"
+    ],
+    "id": "17542726817624yktah8gy",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Les Meilleurs Cookies aux Pépites de Chocolat",
@@ -410,7 +482,13 @@
       "Cuire à 160°C pendant 15-17 minutes ou à 200°C pendant 8,5-10 minutes.",
       "Laisser refroidir les cookies sur la plaque quelques minutes avant de les transférer sur une grille."
     ],
-    "categories": ["Dessert", "Comfort Food", "Baking"]
+    "categories": [
+      "Dessert",
+      "Comfort Food",
+      "Baking"
+    ],
+    "id": "1754272681762tnheg72mh",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Sauce verte",
@@ -434,7 +512,13 @@
       "Ajuster les ingrédients au besoin et ajouter du sel et du poivre selon votre goût.",
       "Voila! Mettre au réfrigérateur pour manger une fois refroidie, et servir avec des frites, du poulet, du poisson, ou un barbecue."
     ],
-    "categories": ["Sauce", "Comfort Food", "French"]
+    "categories": [
+      "Sauce",
+      "Comfort Food",
+      "French"
+    ],
+    "id": "1754272681762onxje098v",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Pulled Pork Américain",
@@ -477,7 +561,13 @@
       "Effilocher le porc et retirer.",
       "Préparer la sauce à partir du jus restant dans la cocotte en combinant ketchup, moutarde de Dijon, vinaigre de cidre de pomme, sucre brun foncé, et sauce Worcestershire."
     ],
-    "categories": ["Main Dish", "Pork", "Comfort Food"]
+    "categories": [
+      "Main Dish",
+      "Pork",
+      "Comfort Food"
+    ],
+    "id": "17542726817622gfb4zscr",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Ragoût de Bœuf Anglais",
@@ -518,7 +608,14 @@
       "Continuer à mijoter pendant encore 30 minutes à 1 heure. Ajouter un peu de persil.",
       "Servir le ragoût avec de la purée de pommes de terre! Voici la recette rapide pour la préparer. Faire bouillir les pommes de terre, les peler, les écraser, ajouter du beurre en chauffant lentement, puis ajouter du lait lentement, puis saler et poivrer."
     ],
-    "categories": ["English", "Beef", "Stew", "Comfort Food"]
+    "categories": [
+      "English",
+      "Beef",
+      "Stew",
+      "Comfort Food"
+    ],
+    "id": "1754272681762qu26ioc0q",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Ramyun: Chashu et Œufs Ramen",
@@ -563,7 +660,11 @@
       "Peler les œufs délicatement et les ajouter à la sauce.",
       "Une fois refroidis, mariner les œufs bouillis dans le mélange pendant au moins 4 heures, de préférence toute la nuit, pour obtenir la meilleure saveur."
     ],
-    "categories": ["Japanese"]
+    "categories": [
+      "Japanese"
+    ],
+    "id": "1754272681762lijlezz6g",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   },
   {
     "title": "Japchae",
@@ -594,6 +695,11 @@
       "Faire sauter le bœuf mariné jusqu'à ce qu'il soit bien cuit.",
       "Combiner tous les ingrédients, ajouter plus de sauce et des graines de sésame, et faire sauter le tout jusqu'à ce que ce soit bien chauffé."
     ],
-    "categories": ["Korean", "Noodles"]
+    "categories": [
+      "Korean",
+      "Noodles"
+    ],
+    "id": "17542726817627gv1thekk",
+    "createdAt": "2025-08-04T01:58:01.762Z"
   }
 ]
