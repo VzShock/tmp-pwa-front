@@ -27,7 +27,14 @@
       "Wash off salt, then squeeze water",
       "Add the sauce"
     ],
-    "categories": ["Asian", "Salad", "Healthy", "Vegetarian"]
+    "categories": [
+      "Asian",
+      "Salad",
+      "Healthy",
+      "Vegetarian"
+    ],
+    "id": "1754272679728pyqzsoy64",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Korean cucumber salad",
@@ -51,7 +58,14 @@
       "Drain and squeeze out excess water.",
       "Add the sauce, enjoy!"
     ],
-    "categories": ["Korean", "Salad", "Spicy", "Vegetarian"]
+    "categories": [
+      "Korean",
+      "Salad",
+      "Spicy",
+      "Vegetarian"
+    ],
+    "id": "1754272679728hg4lil1lr",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Korean Sticky Chicken",
@@ -75,7 +89,13 @@
       "Heat the sauce until it bubbles and add chicken.",
       "Garnish with sesame seeds and scallions."
     ],
-    "categories": ["Korean", "Chicken", "Spicy"]
+    "categories": [
+      "Korean",
+      "Chicken",
+      "Spicy"
+    ],
+    "id": "17542726797288mq0scp08",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Beef Bourguignon",
@@ -110,7 +130,13 @@
       "If the beef is not fully submerged, then add the stock to cover. Add bay leaves and thyme. 2-4 hours simmer on lowest heat.",
       "Make the mushrooms to put on top. Et voila!"
     ],
-    "categories": ["French", "Beef", "Stew"]
+    "categories": [
+      "French",
+      "Beef",
+      "Stew"
+    ],
+    "id": "1754272679728d19lkag9g",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Kimchi Jigae",
@@ -150,7 +176,14 @@
       "Chop green onion, chili, and tofu, onion.",
       "Boil for 2 mins."
     ],
-    "categories": ["Korean", "Soup", "Spicy", "Comfort Food"]
+    "categories": [
+      "Korean",
+      "Soup",
+      "Spicy",
+      "Comfort Food"
+    ],
+    "id": "17542726797282iklh9gb9",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Chicken Noodle Soup",
@@ -176,7 +209,13 @@
       "Fry the carcass, then simmer slowly in water for 1 hour.",
       "Remove carcass and add the spices, then add back in chicken and noodles. Voila!"
     ],
-    "categories": ["Soup", "Chicken", "Comfort Food"]
+    "categories": [
+      "Soup",
+      "Chicken",
+      "Comfort Food"
+    ],
+    "id": "1754272679728y20n969a3",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Red Thai Curry",
@@ -217,7 +256,12 @@
       "Just before serving, stir in the basil leaves for freshness. Remove the lemongrass stalks.",
       "Serve hot with rice or noodles. To make better: Add lime"
     ],
-    "categories": ["Thai", "Spicy"]
+    "categories": [
+      "Thai",
+      "Spicy"
+    ],
+    "id": "175427267972821xhunpzf",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Kimbap",
@@ -251,7 +295,13 @@
       "Now assemble everything, rice, seaweed and your other ingredients",
       "Bon appetite!"
     ],
-    "categories": ["Korean", "Sushi", "Seafood"]
+    "categories": [
+      "Korean",
+      "Sushi",
+      "Seafood"
+    ],
+    "id": "1754272679728c9vv90ppy",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Ultimate Thai Beef Salad",
@@ -293,7 +343,13 @@
       "Combine salad ingredients with steak and dressing in a bowl.",
       "Serve with optional rice."
     ],
-    "categories": ["Thai", "Beef", "Salad"]
+    "categories": [
+      "Thai",
+      "Beef",
+      "Salad"
+    ],
+    "id": "175427267972811nw4lw5t",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Kimchi Fried Rice (Kimchi-bokkeumbap)",
@@ -320,7 +376,12 @@
       "Add sesame oil and remove from the heat.",
       "Garnish with sprinkled chopped green onion, roasted gim, and sesame seeds. Serve right away."
     ],
-    "categories": ["Korean", "Comfort Food"]
+    "categories": [
+      "Korean",
+      "Comfort Food"
+    ],
+    "id": "1754272679728s3iloj5r8",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Buffalo Chicken Wings",
@@ -346,7 +407,12 @@
       "Remove the wings from the oven and toss them in the sauce.",
       "Serve hot."
     ],
-    "categories": ["American", "Chicken"]
+    "categories": [
+      "American",
+      "Chicken"
+    ],
+    "id": "1754272679728rwtf6b2xl",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Sautéed Curry Shrimp",
@@ -382,7 +448,13 @@
       "Divide the rice among 4 bowls and top with the shrimp.",
       "Sprinkle with chopped cilantro and serve immediately with a side of sauce."
     ],
-    "categories": ["Seafood", "Healthy", "Quick Meal"]
+    "categories": [
+      "Seafood",
+      "Healthy",
+      "Quick Meal"
+    ],
+    "id": "1754272679728bjoros454",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Best Chocolate Chip Cookies",
@@ -414,7 +486,13 @@
       "Bake at 160°C for 15-17 minutes or at 200°C for 8.5-10 minutes.",
       "Let the cookies cool on the tray for a few minutes before transferring to a wire rack."
     ],
-    "categories": ["Dessert", "Comfort Food", "Baking"]
+    "categories": [
+      "Dessert",
+      "Comfort Food",
+      "Baking"
+    ],
+    "id": "1754272679728nlpkvwvqb",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Sauce vert",
@@ -438,7 +516,13 @@
       "Adjust any ingredients as needed and add salt and pepper to your taste.",
       "Voila! Set in the fridge to eat when cooled, and serve with chips, chicken, fish, or barbeque."
     ],
-    "categories": ["Sauce", "Comfort Food", "French"]
+    "categories": [
+      "Sauce",
+      "Comfort Food",
+      "French"
+    ],
+    "id": "17542726797281zlpglb68",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "American Pulled Pork",
@@ -481,7 +565,13 @@
       "Pull the pork and remove.",
       "Make the sauce from the leftover juice in the Dutch oven by combining ketchup, Dijon mustard, apple cider vinegar, dark brown sugar, and Worcestershire sauce."
     ],
-    "categories": ["Main Dish", "Pork", "Comfort Food"]
+    "categories": [
+      "Main Dish",
+      "Pork",
+      "Comfort Food"
+    ],
+    "id": "1754272679728rqng1i9l6",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "English Beef Stew",
@@ -522,7 +612,14 @@
       "Continue simmering for another 30 minutes to 1 hour. After, add some parsley.",
       "Serve the stew with mashed potatoes! Here’s the quick recipe for making this. Boil potatoes, peel, crush, add butter slowly while heating it, then add milk slowly, then add salt and pepper."
     ],
-    "categories": ["English", "Beef", "Stew", "Comfort Food"]
+    "categories": [
+      "English",
+      "Beef",
+      "Stew",
+      "Comfort Food"
+    ],
+    "id": "17542726797283go6egbet",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Ramyun: Chashu and Ramen Eggs",
@@ -567,7 +664,11 @@
       "Peel eggs carefully and add to your sauce.",
       "Once cooled, marinate boiled eggs in the mixture for at least 4 hours, preferably overnight, for the best flavor."
     ],
-    "categories": ["Japanese"]
+    "categories": [
+      "Japanese"
+    ],
+    "id": "1754272679728hgfzc9ke0",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   },
   {
     "title": "Japchae",
@@ -598,6 +699,11 @@
       "Sauté the marinated beef until fully cooked.",
       "Combine all ingredients, add more sauce and sesame seeds, and stir-fry everything together until heated through."
     ],
-    "categories": ["Korean", "Noodles"]
+    "categories": [
+      "Korean",
+      "Noodles"
+    ],
+    "id": "1754272679728z5j6zlh4a",
+    "createdAt": "2025-08-04T01:57:59.728Z"
   }
 ]
